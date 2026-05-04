@@ -1,0 +1,336 @@
+@import "tailwindcss";
+@import "../../typography/typography.css";
+
+@theme {
+  --font-heading: "Montserrat", sans-serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", monospace;
+
+  --color-color-bg: var(--color-bg);
+  --color-color-bg-2: var(--color-bg-2);
+  --color-color-bg-elevated: var(--color-bg-elevated);
+  --color-color-text: var(--color-text);
+  --color-color-text-2: var(--color-text-2);
+  --color-color-text-muted: var(--color-text-muted);
+  --color-color-accent: var(--color-accent);
+  --color-color-cta: var(--color-cta);
+  --color-color-border: var(--color-border);
+  --color-color-accent-bg: var(--color-accent-bg);
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-4xl: 3rem;
+
+  --shadow-soft: 0 20px 50px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 24px rgba(251, 176, 59, 0.35);
+}
+
+:root {
+  /* Clean, Professional Light Theme */
+  --color-bg: #FFFFFF;
+  --color-bg-2: #F9FAFB;
+  --color-bg-elevated: #FFFFFF;
+  --color-text: #111111;
+  --color-text-2: #4B5563;
+  --color-text-muted: #9CA3AF;
+  --color-accent: #D97706;
+  --color-cta: #D97706;
+  --color-border: #E5E7EB;
+  --color-accent-bg: #FEF3C7;
+
+  --color-accent-rgb: 217, 119, 6;
+  --color-bg-rgb: 255, 255, 255;
+  --color-text-rgb: 17, 17, 17;
+  --color-bg-2-rgb: 249, 250, 251;
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #0A0A0A;
+  --color-bg-2: #111111;
+  --color-bg-elevated: #171717;
+  --color-text: #FAFAFA;
+  --color-text-2: #A1A1AA;
+  --color-text-muted: #71717A;
+  --color-accent: #F59E0B;
+  --color-cta: #F59E0B;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-accent-bg: rgba(245, 158, 11, 0.1);
+
+  --color-accent-rgb: 245, 158, 11;
+  --color-bg-rgb: 10, 10, 10;
+  --color-text-rgb: 250, 250, 250;
+  --color-bg-2-rgb: 17, 17, 17;
+}
+
+@layer base {
+  * {
+    @apply border-color-border;
+  }
+
+  body {
+    @apply bg-color-bg text-color-text font-heading antialiased selection:bg-color-accent selection:text-white;
+    font-feature-settings: "kern", "liga", "calt";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Typography utilities live in typography/typography.css — edit there. */
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .section {
+    @apply py-10 md:py-14 lg:py-16;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-2xl border border-white/20 shadow-soft;
+  }
+
+  :root[data-theme='dark'] .glass {
+    @apply bg-black/40 backdrop-blur-2xl border border-white/[0.08];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-color-accent text-white font-semibold text-sm transition-all duration-200 hover:opacity-90 active:scale-[0.98] cursor-pointer;
+  }
+
+  :root[data-theme='dark'] .btn-primary {
+    @apply text-white;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-transparent text-color-text font-semibold text-sm border border-color-border transition-all duration-200 hover:bg-color-bg-2 hover:border-color-text-muted active:scale-[0.98] cursor-pointer;
+  }
+
+  :root[data-theme='dark'] .btn-secondary {
+    @apply border-white/20 hover:bg-white/5;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .badge-float {
+    @apply shadow-lg backdrop-blur-md;
+  }
+
+  /* Gradient border utility */
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+                linear-gradient(135deg, rgba(217,119,6,0.4), rgba(217,119,6,0.1) 50%, rgba(217,119,6,0.4)) border-box;
+    border: 1px solid transparent;
+  }
+
+  /* Section divider gradient */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(217,119,6,0.2) 30%, rgba(217,119,6,0.4) 50%, rgba(217,119,6,0.2) 70%, transparent);
+  }
+
+  /* Glow card */
+  .card-glow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .card-glow:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 12px 24px rgba(0,0,0,0.06);
+  }
+
+  /* Active/highlighted card ring */
+  .card-ring-active {
+    box-shadow: 0 0 0 1px rgba(217,119,6,0.4), 0 4px 16px rgba(217,119,6,0.1);
+  }
+}
+
+/* ── Keyframe Animations ─────────────────────────────────────────── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Aurora — slow drifting colour blobs */
+@keyframes aurora {
+  0%   { transform: translate(0, 0) scale(1);   opacity: 0.55; }
+  33%  { transform: translate(3%, 4%) scale(1.06); opacity: 0.7; }
+  66%  { transform: translate(-2%, 2%) scale(0.97); opacity: 0.5; }
+  100% { transform: translate(0, 0) scale(1);   opacity: 0.55; }
+}
+.animate-aurora {
+  animation: aurora 18s ease-in-out infinite;
+}
+.animate-aurora-slow {
+  animation: aurora 26s ease-in-out infinite reverse;
+}
+
+/* Shimmer sweep */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #D97706 0%,
+    #F59E0B 40%,
+    #D97706 60%,
+    #B45309 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* Gradient bar fill animation */
+@keyframes fillBar {
+  from { width: 0; }
+}
+.animate-fill-bar {
+  animation: fillBar 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Count-up pulse on stat numbers */
+@keyframes statPop {
+  0%   { transform: scale(0.85); opacity: 0; }
+  70%  { transform: scale(1.04); }
+  100% { transform: scale(1);    opacity: 1; }
+}
+.animate-stat-pop {
+  animation: statPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Logo Marquee ─────────────────────────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 28s linear infinite;
+}
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* ── Button shimmer sweep on hover ───────────────────────────────── */
+@keyframes btn-shimmer {
+  0%   { transform: translateX(-100%) skewX(-20deg); }
+  100% { transform: translateX(250%) skewX(-20deg); }
+}
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent);
+  transform: translateX(-100%) skewX(-20deg);
+  pointer-events: none;
+}
+.btn-primary:hover::after {
+  animation: btn-shimmer 0.65s ease forwards;
+}
+
+/* ── Glow pulse for CTA buttons ─────────────────────────────────── */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251,176,59,0.45), 0 4px 24px rgba(251,176,59,0.25); }
+  50%       { box-shadow: 0 0 0 8px rgba(251,176,59,0), 0 4px 32px rgba(251,176,59,0.40); }
+}
+.btn-glow {
+  animation: glow-pulse 2.8s ease-in-out infinite;
+}
+
+/* ── Noise grain texture ─────────────────────────────────────────── */
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+}
+
+/* ── Animated gradient border on cards ───────────────────────────── */
+@keyframes border-spin {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.card-gradient-border {
+  position: relative;
+}
+.card-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent 0%, rgba(251,176,59,0.0) 40%, rgba(251,176,59,0.5) 50%, rgba(251,176,59,0.0) 60%, transparent 100%);
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+.card-gradient-border:hover::before {
+  opacity: 1;
+  animation: border-spin 3s linear infinite;
+}
+
+/* ── Global tracking rescue ──────────────────────────────────────────
+   Arbitrary tracking values in components were over-spec'd (0.2–0.3em).
+   These overrides bring them into a readable range without touching
+   every component file. Placed after Tailwind utilities so they win
+   the cascade without needing !important.
+────────────────────────────────────────────────────────────────────── */
+@layer utilities {
+  .tracking-\[0\.3em\]   { letter-spacing: 0.10em; }
+  .tracking-\[0\.25em\]  { letter-spacing: 0.08em; }
+  .tracking-\[0\.2em\]   { letter-spacing: 0.07em; }
+  .tracking-\[0\.18em\]  { letter-spacing: 0.06em; }
+  .tracking-\[0\.15em\]  { letter-spacing: 0.05em; }
+}
+

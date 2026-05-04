@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <!-- Blocking theme init: reads saved preference before React mounts to prevent FOUC -->
+    <script>
+      (function(){
+        try {
+          var t = localStorage.getItem('theme');
+          document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+        } catch(e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hands-On AI Training India | Build Real AI | Unithink School</title>
+    <meta name="description" content="Hands-on AI workshops for corporates, students &amp; faculty in India. Build and deploy real AI from Day 1. 1,800+ trained. AICTE-aligned. Based in Ahmedabad." />
+    <meta name="keywords" content="AI workshops India, hands-on AI workshop, AI training Ahmedabad, corporate AI training, AI workshop for students, AICTE FDP AI, AI school India, AI skill development, AI certification India, agentic AI training, AI implementation training India, Unithink School" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FBB03B" />
+    <link rel="canonical" href="https://www.unithinkschool.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Open Graph fallback (per-page tags override via react-helmet-async) -->
+    <meta property="og:site_name" content="Unithink School" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="India's Premier Hands-On AI Training — Unithink School" />
+    <meta property="og:description" content="Hands-on AI workshops for corporates, students &amp; faculty in India. Build and deploy real AI from Day 1. 1,800+ trained. AICTE-aligned. Ahmedabad." />
+    <meta property="og:url" content="https://www.unithinkschool.com/" />
+    <meta property="og:image" content="https://www.unithinkschool.com/og-image.jpg" />
+    <meta property="og:image:alt" content="Hands-On AI Training India | Build Real AI | Unithink School" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card fallback -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="India's Premier Hands-On AI Training — Unithink School" />
+    <meta name="twitter:description" content="Hands-on AI workshops for corporates, students &amp; faculty in India. Build and deploy real AI from Day 1. 1,800+ trained. AICTE-aligned." />
+    <meta name="twitter:image" content="https://www.unithinkschool.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Hands-On AI Training India — Unithink School" />
+
+    <!--
+      =============================================
+      GOOGLE ANALYTICS 4
+      =============================================
+      1. Go to analytics.google.com → create a property
+      2. Get your Measurement ID (format: G-XXXXXXXXXX)
+      3. Uncomment the two script blocks below and replace G-XXXXXXXXXX
+      =============================================
+    -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
