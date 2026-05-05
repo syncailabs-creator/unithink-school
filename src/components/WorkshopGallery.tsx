@@ -73,6 +73,8 @@ function Lightbox({ images, startIndex, onClose }: { images: GalleryImage[]; sta
           <img
             src={current.src}
             alt={current.org}
+            width={1200}
+            height={800}
             className="w-full max-h-[78vh] object-cover"
           />
           {/* Caption */}

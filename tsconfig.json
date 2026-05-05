@@ -11,6 +11,7 @@
     ],
     "skipLibCheck": true,
     "moduleResolution": "bundler",
+    "types": ["react", "react-dom", "node"],
     "isolatedModules": true,
     "moduleDetection": "force",
     "allowJs": true,

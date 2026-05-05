@@ -187,11 +187,11 @@ export function SuccessStories() {
         title="Our Work — Real AI Deployments Across India"
         description="Verified AI training outcomes from 9 organisations including Metizsoft, Parul University, Techno NJR, Vishwakarma, and GTU. 1,800+ participants trained. Real case studies and workshop gallery."
         keywords="AI training success stories India, corporate AI results, student AI placement, faculty AI training outcomes, Unithink case studies"
-        canonical="/our-work"
+        canonical="/success-stories"
         jsonLd={[
           breadcrumbSchema([
             { name: 'Home', url: 'https://www.unithinkschool.com' },
-            { name: 'Our Work', url: 'https://www.unithinkschool.com/our-work' },
+            { name: 'Success Stories', url: 'https://www.unithinkschool.com/success-stories' },
           ]),
           organizationSchema,
         ]}

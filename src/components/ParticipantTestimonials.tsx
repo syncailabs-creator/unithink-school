@@ -35,6 +35,7 @@ function VideoTestimonialCard({ video, index }: { video: VideoTestimonial; index
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [muted, setMuted] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -102,17 +103,28 @@ function VideoTestimonialCard({ video, index }: { video: VideoTestimonial; index
         className="relative bg-black overflow-hidden w-full"
         style={{ aspectRatio: '9/16' }}
       >
-        <video
-          ref={videoRef}
-          src={video.src}
-          className="w-full h-full object-cover"
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label={`${video.name} testimonial`}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        {error ? (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-color-bg-2 px-4 text-center">
+            <div className="w-10 h-10 rounded-xl bg-color-accent/10 flex items-center justify-center text-color-accent">
+              <Volume2 className="w-5 h-5 opacity-40" />
+            </div>
+            <p className="text-[10px] uppercase tracking-widest text-color-text-muted font-semibold">{video.name}</p>
+            <p className="text-[9px] text-color-text-muted">{video.role} · {video.org}</p>
+          </div>
+        ) : (
+          <video
+            ref={videoRef}
+            src={video.src}
+            className="w-full h-full object-cover"
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={`${video.name} testimonial`}
+            onError={() => setError(true)}
+          />
+        )}
+        {!error && <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />}
 
         {/* Top-right: fullscreen button */}
         <button

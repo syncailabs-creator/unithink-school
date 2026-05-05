@@ -305,6 +305,9 @@ export function Hero({
                     <img
                       src={image.src}
                       alt={image.alt}
+                      width={800}
+                      height={600}
+                      fetchPriority="high"
                       className="w-full h-full object-cover"
                     />
                     {/* Bottom gradient overlay */}

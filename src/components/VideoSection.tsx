@@ -59,6 +59,7 @@ function VideoCard({ video, index, aspectRatio = '9/16', size = 'portrait', onUn
   const containerRef = useRef<HTMLDivElement>(null);
   const [muted, setMuted] = useState(true);
   const [ready, setReady] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -105,21 +106,32 @@ function VideoCard({ video, index, aspectRatio = '9/16', size = 'portrait', onUn
         className="relative bg-black overflow-hidden w-full"
         style={{ aspectRatio }}
       >
-        <video
-          ref={(el) => { (videoRef as React.MutableRefObject<HTMLVideoElement | null>).current = el; registerVideo?.(el); }}
-          src={video.src}
-          poster={video.poster}
-          className="w-full h-full object-contain"
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label={video.label}
-          onLoadedMetadata={() => setReady(true)}
-        />
+        {error ? (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-color-bg-2">
+            <div className="w-12 h-12 rounded-xl bg-color-accent/10 flex items-center justify-center text-color-accent">
+              <Volume2 className="w-6 h-6 opacity-40" />
+            </div>
+            <p className="text-[10px] uppercase tracking-widest text-color-text-muted font-semibold">{video.label}</p>
+            <p className="text-[9px] text-color-text-muted">Video coming soon</p>
+          </div>
+        ) : (
+          <video
+            ref={(el) => { (videoRef as React.RefObject<HTMLVideoElement | null>).current = el; registerVideo?.(el); }}
+            src={video.src}
+            poster={video.poster}
+            className="w-full h-full object-contain"
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={video.label}
+            onLoadedMetadata={() => setReady(true)}
+            onError={() => setError(true)}
+          />
+        )}
 
-        {/* Loading shimmer */}
-        {!ready && (
+        {/* Loading shimmer — only while video is loading and no error */}
+        {!ready && !error && (
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-white/10 to-white/5 animate-pulse" />
         )}
 
