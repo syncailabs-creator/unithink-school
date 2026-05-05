@@ -255,3 +255,50 @@ export function courseSchema(
   }
   return schema;
 }
+
+export function personSchema(person: {
+  name: string;
+  jobTitle: string;
+  description: string;
+  image?: string;
+  url?: string;
+  sameAs?: string[];
+  knowsAbout?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE_URL}/about#${person.name.toLowerCase().replace(/\s+/g, '-')}`,
+    "name": person.name,
+    "jobTitle": person.jobTitle,
+    "description": person.description,
+    "worksFor": {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      "name": "Unithink School"
+    },
+    "url": person.url ?? `${SITE_URL}/about`,
+    ...(person.image ? { "image": `${SITE_URL}${person.image}` } : {}),
+    ...(person.sameAs?.length ? { "sameAs": person.sameAs } : {}),
+    ...(person.knowsAbout?.length ? { "knowsAbout": person.knowsAbout } : {}),
+  };
+}
+
+export const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": `${SITE_URL}/about#webpage`,
+  "name": "About Unithink School — India's Hands-On AI Training Company",
+  "description": "Unithink School is India's most practical AI training institute. Founded in Ahmedabad, we train students, faculty, and corporate teams to build and deploy real AI using the Parivartan Method.",
+  "url": `${SITE_URL}/about`,
+  "isPartOf": { "@id": `${SITE_URL}/#website` },
+  "about": { "@id": `${SITE_URL}/#organization` },
+  "keywords": [
+    "AI training India",
+    "hands-on AI workshop",
+    "Parivartan Method",
+    "AICTE FDP",
+    "corporate AI training",
+    "AI workshop Ahmedabad"
+  ]
+};

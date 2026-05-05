@@ -110,6 +110,9 @@ export function EducatorsSection({ eyebrow = 'Our Educators', title = 'Trained b
                     <img
                       src={edu.photo}
                       alt={edu.name}
+                      width={400}
+                      height={300}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       style={{ objectPosition: edu.objectPosition ?? 'top' }}
                     />

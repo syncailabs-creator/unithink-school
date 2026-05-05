@@ -8,16 +8,12 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '.'),
-      '@typography': path.resolve(__dirname, '../typography'),
     },
   },
   server: {
     port: 3000,
     host: '0.0.0.0',
     hmr: process.env.DISABLE_HMR !== 'true',
-    fs: {
-      allow: ['..'],
-    },
   },
   build: {
     rollupOptions: {

@@ -288,6 +288,9 @@ export function SuccessStories() {
                 <img
                   src="/content/ws1.jpg"
                   alt="Live workshop session"
+                  width={800}
+                  height={600}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
                 {/* Gradient overlay */}

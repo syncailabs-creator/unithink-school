@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "../../typography/typography.css";
+@import "./typography.css";
 
 @theme {
   --font-heading: "Montserrat", sans-serif;
@@ -76,7 +76,7 @@
   }
 }
 
-/* Typography utilities live in typography/typography.css — edit there. */
+/* Typography utilities — edit src/typography.css */
 
 @layer components {
   .container {

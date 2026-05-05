@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Target, Zap, Users, ShieldCheck, BookOpen, Award, Lightbulb, Search, MessageSquare, UserCheck, FileText, CheckCircle2, Presentation, MapPin, Heart, Building2, Star } from 'lucide-react';
-import { SEO, organizationSchema, breadcrumbSchema } from '../components/SEO';
+import { SEO, organizationSchema, breadcrumbSchema, aboutPageSchema, personSchema } from '../components/SEO';
 import { Stats } from '../components/Stats';
 import { EducatorsSection } from '../components/EducatorsSection';
 import { TrustBar } from '../components/TrustBar';
@@ -163,25 +163,41 @@ export function About() {
         canonical="/about"
         jsonLd={[
           organizationSchema,
+          aboutPageSchema,
           breadcrumbSchema([
             { name: 'Home', url: 'https://www.unithinkschool.com' },
             { name: 'About Us', url: 'https://www.unithinkschool.com/about' },
           ]),
-          {
-            "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "name": "About Unithink School",
-            "url": "https://www.unithinkschool.com/about",
-            "description": "Learn about Unithink School — India's hands-on AI training company for students, faculty, and corporate teams.",
-            "mainEntity": {
-              "@type": "EducationalOrganization",
-              "name": "Unithink School",
-              "foundingDate": "2023",
-              "foundingLocation": "Ahmedabad, Gujarat, India",
-              "areaServed": ["Gujarat", "Rajasthan", "Maharashtra"],
-              "knowsAbout": ["Artificial Intelligence", "Machine Learning", "AI Automation", "Generative AI", "AI Agent Development"],
-            }
-          }
+          personSchema({
+            name: 'Mhir Sagar',
+            jobTitle: 'Lead AI Automation Expert',
+            description: 'Lead AI Automation Expert at Unithink School. Specialises in n8n workflows, agentic AI systems, and enterprise automation training.',
+            knowsAbout: ['AI Automation', 'n8n', 'LangChain', 'Agentic AI', 'Workflow Automation'],
+          }),
+          personSchema({
+            name: 'Mitul Kalariya',
+            jobTitle: 'Lead AI & ML Developer',
+            description: 'Lead AI & ML Developer at Unithink School. Specialises in machine learning pipelines, GenAI applications, and hands-on ML training.',
+            knowsAbout: ['Machine Learning', 'Generative AI', 'Python', 'LLM Fine-tuning', 'AI Development'],
+          }),
+          personSchema({
+            name: 'Pakshal Ghiya',
+            jobTitle: 'Lead AI-ML Engineer',
+            description: 'Lead AI-ML Engineer at Unithink School. Builds and deploys production AI agents and trains engineering students on applied ML.',
+            knowsAbout: ['AI Engineering', 'ML Pipelines', 'AI Agents', 'Deep Learning', 'Python'],
+          }),
+          personSchema({
+            name: 'Yash Bhaward',
+            jobTitle: 'Senior Data Scientist',
+            description: 'Senior Data Scientist at Unithink School. Specialises in data science, AI analytics, and practical data-driven AI workshops.',
+            knowsAbout: ['Data Science', 'AI Analytics', 'Python', 'Machine Learning', 'Statistical Modelling'],
+          }),
+          personSchema({
+            name: 'Manali Patel',
+            jobTitle: 'AI Automation Consultant — Business Analyst & Project Manager',
+            description: 'AI Automation Consultant at Unithink School. Bridges AI implementation with business strategy for corporate teams across India.',
+            knowsAbout: ['AI Automation', 'Business Analysis', 'Project Management', 'Corporate AI Training'],
+          }),
         ]}
       />
 
@@ -330,7 +346,7 @@ export function About() {
 
                 {/* Top image strip */}
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
-                  <img src="/content/about-banner.png" alt="Unithink team at AI Experts Summit 2024" className="w-full h-full object-cover" />
+                  <img src="/content/about-banner.png" alt="Unithink team at AI Experts Summit 2024" width={1200} height={675} loading="lazy" className="w-full h-full object-cover" />
                   <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)' }} />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-heading font-bold text-xl leading-tight">AI Experts Summit 2024.<br />Bengaluru, India.</p>

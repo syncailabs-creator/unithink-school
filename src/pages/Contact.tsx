@@ -184,9 +184,9 @@ export function Contact() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-[2px] rounded-full" style={{ background: 'linear-gradient(to right, #FBB03B, transparent)' }} />
-                    <h2 className="type-h6 text-color-accent">What Happens Next</h2>
+                    <span className="type-h6 text-color-accent">What Happens Next</span>
                   </div>
-                  <p className="type-h3 text-color-text mt-2">After You Submit</p>
+                  <h2 className="type-h3 text-color-text mt-2">After You Submit</h2>
                 </div>
 
                 <div className="p-8">
@@ -403,9 +403,9 @@ export function Contact() {
             >
               <div className="flex items-center gap-3">
                 <div className="w-8 h-[2px] rounded-full" style={{ background: 'linear-gradient(to right, #FBB03B, transparent)' }} />
-                <h2 className="type-h6 text-color-accent">Direct Line</h2>
+                <span className="type-h6 text-color-accent">Direct Line</span>
               </div>
-              <p className="type-h3 text-color-text mt-2">Reach Us Directly</p>
+              <h2 className="type-h3 text-color-text mt-2">Reach Us Directly</h2>
             </div>
 
             <div className="p-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">

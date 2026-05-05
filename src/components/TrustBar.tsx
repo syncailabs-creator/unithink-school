@@ -79,6 +79,8 @@ function LogoItem({ logo }: { logo: { name: string; src: string; subtitle: strin
         <img
           src={logo.src}
           alt={logo.name}
+          width={180}
+          height={80}
           className="w-full h-full object-contain
             opacity-85 group-hover:opacity-100
             group-hover:scale-[1.06]
