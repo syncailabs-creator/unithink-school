@@ -118,7 +118,7 @@ export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
           </div>
 
           <p className="text-xs text-color-text-muted text-center font-normal">
-            Tool selection is customised per workshop Â· All tools have free tiers or access is provided
+            Tool selection is customised per workshop · All tools have free tiers or access is provided
           </p>
         </div>
       </div>

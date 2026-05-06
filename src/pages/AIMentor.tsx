@@ -15,7 +15,7 @@ const plans = [
     name: 'Live Sunday Workshop',
     price: 'Free',
     tag: 'Start Here',
-    description: 'Every Sunday Â· Online Â· Open to All Â· Direct Q&A with Our AI Expert',
+    description: 'Every Sunday · Online · Open to All · Direct Q&A with Our AI Expert',
     features: [
       'Live 90-minute AI session every Sunday',
       'Ask your questions directly to the expert â€” no pre-screening, no filters',
@@ -25,12 +25,12 @@ const plans = [
     ],
     cta: "Join Free Sunday Workshop",
     whatsappMsg: "Hi I want to join the free Sunday AI workshop",
-    footer: "Every Sunday Â· 10 AM IST Â· Zoom Â· No registration fee"
+    footer: "Every Sunday · 10 AM IST · Zoom · No registration fee"
   },
   {
     id: 'community',
     name: 'AI Community Access',
-    price: 'â‚¹299',
+    price: '₹299',
     period: 'One-Time',
     tag: 'Most Popular',
     description: 'Join 500+ active AI learners. Daily resources. Expert access. Lifetime membership.',
@@ -43,15 +43,15 @@ const plans = [
       'Monthly live Q&A session with the full Unithink expert panel',
       'All recordings from Sunday live sessions archived in the group',
     ],
-    cta: "Join Community for â‚¹299",
+    cta: "Join Community for ₹299",
     whatsappMsg: "Hi I want to join the AI community for 299",
-    footer: "One-time â‚¹299 Â· Lifetime access Â· 500+ active members",
+    footer: "One-time ₹299 · Lifetime access · 500+ active members",
     highlight: true
   },
   {
     id: 'roadmap',
     name: 'Personalised AI Roadmap',
-    price: 'â‚¹999',
+    price: '₹999',
     period: 'One-Time',
     tag: 'Most Impactful',
     description: 'A custom-built AI learning path designed around your specific goals, skills, and career target.',
@@ -61,9 +61,9 @@ const plans = [
       'Tool and platform recommendations specific to your role, industry, and career goal',
       'Curated resource list: exact courses, GitHub repos, papers, and communities',
       '30-day check-in follow-up call â€” we review your progress and answer blockers',
-      'Community access included â€” â‚¹299 value, at no extra charge',
+      'Community access included â€” ₹299 value, at no extra charge',
     ],
-    cta: "Get My Roadmap for â‚¹999",
+    cta: "Get My Roadmap for ₹999",
     whatsappMsg: "Hi I want the personalised AI roadmap for 999",
     footer: "Includes: 1:1 call + Custom PDF Roadmap + 30-day follow-up + Community"
   }
@@ -94,7 +94,7 @@ const testimonials = [
     photo: '',
   },
   {
-    quote: "I got the â‚¹999 roadmap before deciding whether to attend a full workshop. The 45-minute call gave me more clarity about where to focus than anything I had read online.",
+    quote: "I got the ₹999 roadmap before deciding whether to attend a full workshop. The 45-minute call gave me more clarity about where to focus than anything I had read online.",
     author: "Priya Shah",
     role: "Marketing Manager",
     location: "Surat",
@@ -104,7 +104,7 @@ const testimonials = [
     photo: '',
   },
   {
-    quote: "I was skeptical about paying only â‚¹299 for lifetime community access. Six months in, I've attended 24 Sunday sessions and landed a job that specifically mentioned my AI automation skills.",
+    quote: "I was skeptical about paying only ₹299 for lifetime community access. Six months in, I've attended 24 Sunday sessions and landed a job that specifically mentioned my AI automation skills.",
     author: "Arjun Patel",
     role: "Recent Graduate",
     location: "Vadodara",
@@ -114,7 +114,7 @@ const testimonials = [
     photo: '',
   },
   {
-    quote: "As a freelancer, the community gave me frameworks I could immediately package into client services. Earned back the â‚¹299 on day two.",
+    quote: "As a freelancer, the community gave me frameworks I could immediately package into client services. Earned back the ₹299 on day two.",
     author: "Neha Joshi",
     role: "Freelance Designer",
     location: "Pune",
@@ -151,20 +151,20 @@ const faqs = [
     a: "Yes. The Live Sunday Workshop is completely free. No registration fee, no credit card, no catch. We run it every Sunday at 10 AM IST on Zoom. All you need to do is send a WhatsApp message to join the group and you will receive the Zoom link every week."
   },
   {
-    q: "What happens after I pay for the â‚¹299 community?",
+    q: "What happens after I pay for the ₹299 community?",
     a: "You will receive a WhatsApp link within 24 hours to join the private AI community group. You will immediately have access to the archived resources, daily drops, and trainer channels. There are no recurring charges. Your access is lifetime."
   },
   {
-    q: "How long does the â‚¹999 roadmap process take?",
+    q: "How long does the ₹999 roadmap process take?",
     a: "After purchase, we schedule your 45-minute 1:1 call within 3â€“5 business days. Your custom PDF roadmap is delivered within 48 hours of the call. The 30-day follow-up call is scheduled at the time of your first call. Total engagement: under 2 hours of your time, spread across 30 days."
   },
   {
-    q: "Can I upgrade from the free plan to â‚¹299 or â‚¹999?",
-    a: "Yes. There is no barrier to upgrading. If you are on the free Sunday sessions and want community access, simply pay for the â‚¹299 plan. If you want the 1:1 roadmap, pay â‚¹999 â€” the community access is included at no extra charge."
+    q: "Can I upgrade from the free plan to ₹299 or ₹999?",
+    a: "Yes. There is no barrier to upgrading. If you are on the free Sunday sessions and want community access, simply pay for the ₹299 plan. If you want the 1:1 roadmap, pay ₹999 â€” the community access is included at no extra charge."
   },
   {
     q: "Is the AI Mentor right for beginners?",
-    a: "Yes. The Sunday free sessions start from zero and build progressively. The â‚¹999 roadmap is specifically designed to assess your current level first before building a learning path. You do not need any prior AI knowledge."
+    a: "Yes. The Sunday free sessions start from zero and build progressively. The ₹999 roadmap is specifically designed to assess your current level first before building a learning path. You do not need any prior AI knowledge."
   },
   {
     q: "Can this lead into a full workshop later?",
@@ -175,16 +175,16 @@ const faqs = [
     a: "Topics rotate weekly and cover tools like ChatGPT, Claude, Gemini, n8n automation, LangChain agents, Perplexity, Notion AI, Midjourney, Runway, and emerging tools relevant to the India market. Each session focuses on one theme with a live build component â€” not just a demo."
   },
   {
-    q: "How is the â‚¹999 roadmap different from just Googling a learning path?",
-    a: "A Google search gives you a generic list of courses. The â‚¹999 roadmap is personalised to your current skill level, your specific job role or career target, and your available time each week. The 45-minute call surfaces constraints and goals that no algorithm can infer. The PDF roadmap includes milestone checkpoints, specific tools, GitHub repos, and a 30-day follow-up to review your actual progress."
+    q: "How is the ₹999 roadmap different from just Googling a learning path?",
+    a: "A Google search gives you a generic list of courses. The ₹999 roadmap is personalised to your current skill level, your specific job role or career target, and your available time each week. The 45-minute call surfaces constraints and goals that no algorithm can infer. The PDF roadmap includes milestone checkpoints, specific tools, GitHub repos, and a 30-day follow-up to review your actual progress."
   },
   {
     q: "Can organisations use the AI Mentor program for their team?",
-    a: "Yes. The community access (â‚¹299) works well for individual employees exploring AI independently. For structured team learning, we recommend our Corporate AI Training workshops, which are purpose-built for organisational deployment."
+    a: "Yes. The community access (₹299) works well for individual employees exploring AI independently. For structured team learning, we recommend our Corporate AI Training workshops, which are purpose-built for organisational deployment."
   },
   {
     q: "What is the refund policy for the paid plans?",
-    a: "For the â‚¹299 community: if you are not satisfied within 7 days of joining, we will refund you in full â€” no questions asked. For the â‚¹999 roadmap: if the 1:1 call does not meet your expectations, we offer a full refund before the PDF roadmap is delivered."
+    a: "For the ₹299 community: if you are not satisfied within 7 days of joining, we will refund you in full â€” no questions asked. For the ₹999 roadmap: if the 1:1 call does not meet your expectations, we offer a full refund before the PDF roadmap is delivered."
   },
 ];
 
@@ -318,7 +318,7 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
         <div className="min-w-0">
           <p className="text-sm font-bold text-color-text truncate">{t.author}</p>
           <p className="text-[10px] text-color-text-muted font-semibold uppercase tracking-wider truncate">
-            {t.role} Â· {t.location}
+            {t.role} · {t.location}
           </p>
         </div>
         <span className="ml-auto text-[9px] font-medium uppercase tracking-[0.06em] px-2.5 py-1 rounded-full border flex-shrink-0"
@@ -343,7 +343,7 @@ export function AIMentor() {
     <div className="pt-20 relative overflow-hidden">
       <SEO
         title="AI Mentor India | Free Sunday Workshop"
-        description="Your personal AI growth partner. Free Sunday AI workshops, â‚¹299 community access, or â‚¹999 personalised roadmap. Expert-led. For India's AI learners."
+        description="Your personal AI growth partner. Free Sunday AI workshops, ₹299 community access, or ₹999 personalised roadmap. Expert-led. For India's AI learners."
         keywords="AI mentor India, free AI workshop India, AI learning roadmap, AI community India, personalised AI guidance, AI for beginners India, AI career guidance, Sunday AI workshop, learning agent in AI, AI roadmap for students India"
         canonical="/ai-mentor"
         jsonLd={[
@@ -356,7 +356,7 @@ export function AIMentor() {
             "@type": "Service",
             "name": "AI Mentor by Unithink School",
             "url": "https://www.unithinkschool.com/ai-mentor",
-            "description": "Personal AI growth partner offering free Sunday live workshops, â‚¹299 private community access, and â‚¹999 personalised AI roadmap with 1:1 expert call.",
+            "description": "Personal AI growth partner offering free Sunday live workshops, ₹299 private community access, and ₹999 personalised AI roadmap with 1:1 expert call.",
             "provider": {
               "@type": "Organization",
               "name": "Unithink School",
@@ -390,7 +390,7 @@ export function AIMentor() {
         subheadline="Not ready for a full workshop? Start your AI journey with direct expert guidance â€” at your pace, around your goals, at a price that removes every barrier."
         primaryCTA={{ text: "Join Free Sunday Session", href: "https://wa.me/919726217070?text=Hi%20I%20want%20to%20join%20the%20free%20Sunday%20AI%20workshop" }}
         secondaryCTA={{ text: "Get Personalised Roadmap", href: "/contact" }}
-        trustLine="500+ Active Community Members Â· Live Every Sunday 10 AM IST Â· Expert-Led Â· No Pre-Recorded Content"
+        trustLine="500+ Active Community Members · Live Every Sunday 10 AM IST · Expert-Led · No Pre-Recorded Content"
         image={{ src: '/content/ai-mentor-banner.jpeg', alt: 'AI Mentor Program' }}
       />
 
@@ -571,13 +571,13 @@ export function AIMentor() {
                     <th className="px-6 py-6 text-center" style={{ background: 'rgba(251,176,59,0.06)' }}>
                       <div className="flex flex-col items-center gap-1">
                         <span className="text-[9px] font-black uppercase tracking-[0.2em] text-color-accent">Community</span>
-                        <span className="text-xl font-heading font-black text-color-accent">â‚¹299</span>
+                        <span className="text-xl font-heading font-black text-color-accent">₹299</span>
                       </div>
                     </th>
                     <th className="px-6 py-6 text-center bg-color-bg-2">
                       <div className="flex flex-col items-center gap-1">
                         <span className="text-[9px] font-medium uppercase tracking-[0.06em] text-color-text-muted">Roadmap</span>
-                        <span className="text-xl font-heading font-black text-color-text">â‚¹999</span>
+                        <span className="text-xl font-heading font-black text-color-text">₹999</span>
                       </div>
                     </th>
                   </tr>

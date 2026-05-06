@@ -379,7 +379,7 @@ export function Contact() {
                         )}
                       </button>
                       <p className="text-[10px] text-center text-color-text-muted uppercase tracking-[0.06em] font-medium">
-                        Response within 24h Â· Tailored proposal Â· No spam Â· No commitment required
+                        Response within 24h · Tailored proposal · No spam · No commitment required
                       </p>
                     </form>
                   </div>

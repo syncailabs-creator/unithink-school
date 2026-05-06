@@ -6,7 +6,7 @@ import { DotGrid } from './DotGrid';
 const plans = [
   {
     title: 'One-Day Workshop',
-    price: 'â‚¹1,500',
+    price: '₹1,500',
     label: 'AWARENESS',
     perfectFor: 'AI awareness, pilot programs, leadership briefings, large department introductions',
     features: [
@@ -23,7 +23,7 @@ const plans = [
   },
   {
     title: 'Two-Day Intensive',
-    price: 'â‚¹2,000',
+    price: '₹2,000',
     label: 'MOST POPULAR',
     perfectFor: 'Department transformation, pre-placement student batches, AICTE FDP programs, company-wide AI rollouts',
     features: [

@@ -8,7 +8,7 @@ const mentorPlans = [
   {
     title:   'Live Sunday Workshop',
     price:   'FREE',
-    tagline: 'Every Sunday Â· Online Â· Open to all Â· Direct Q&A with our AI expert',
+    tagline: 'Every Sunday · Online · Open to all · Direct Q&A with our AI expert',
     features: [
       'Live 90-minute AI session every Sunday',
       'Ask anything directly to the expert. No filters, no pre-screening',
@@ -17,12 +17,12 @@ const mentorPlans = [
       'Attendance certificate for consistent participants',
     ],
     cta:  'Join Free Sunday Workshop',   // Fixed: was misleadingly "Schedule Free 1:1 Call"
-    note: 'Every Sunday Â· 10 AM IST Â· Zoom Â· No registration fee Â· No credit card',
+    note: 'Every Sunday · 10 AM IST · Zoom · No registration fee · No credit card',
     icon: MessageCircle,
   },
   {
     title:   'AI Community Access',
-    price:   'â‚¹299',
+    price:   '₹299',
     tagline: 'Join our exclusive WhatsApp AI learning community with ongoing expert support',
     features: [
       'Private WhatsApp group with 500+ active AI learners',
@@ -33,12 +33,12 @@ const mentorPlans = [
       'Monthly live Q&A session with the full expert panel',
     ],
     cta:  'Join the Community',
-    note: 'One-time â‚¹299 Â· Lifetime access Â· 500+ active members',
+    note: 'One-time ₹299 · Lifetime access · 500+ active members',
     icon: Users,
   },
   {
     title:   'Personalised AI Roadmap',
-    price:   'â‚¹999',
+    price:   '₹999',
     tagline: 'A custom AI learning path built around where you are now and where you want to go',
     features: [
       '45-minute 1:1 deep-dive call with an Unithink expert',
@@ -46,10 +46,10 @@ const mentorPlans = [
       'Tool and platform recommendations specific to your role and industry',
       'Curated resource list: courses, GitHub repos, papers, and communities',
       '30-day check-in follow-up call to review progress',
-      'Community access included at no extra charge (â‚¹299 value)',
+      'Community access included at no extra charge (₹299 value)',
     ],
     cta:  'Get My Roadmap',
-    note: 'Includes: 1:1 call + Custom PDF roadmap + 30-day follow-up Â· â‚¹999 one-time',
+    note: 'Includes: 1:1 call + Custom PDF roadmap + 30-day follow-up · ₹999 one-time',
     icon: Map,
   },
 ];

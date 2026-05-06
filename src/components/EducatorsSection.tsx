@@ -40,7 +40,7 @@ const educators: Educator[] = [
   },
   {
     name: 'Manali Patel',
-    position: 'AI Automation Consultant Â· BA & PM',
+    position: 'AI Automation Consultant · BA & PM',
     description: 'Leads corporate and faculty AI programmes. Specialist in n8n, Make.com, and no-code AI automation workflows.',
     photo: '/content/team/manali.jpg',
     linkedin: 'https://linkedin.com',
