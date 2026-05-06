@@ -1,4 +1,4 @@
-import { DotGrid } from './DotGrid';
+﻿import { DotGrid } from './DotGrid';
 import { motion } from 'motion/react';
 import { Check, X } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
@@ -54,7 +54,7 @@ export function Differentiation() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -88,7 +88,7 @@ export function Differentiation() {
                       key={row.feature}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: false, amount: 0.08 }}
+                      viewport={{ once: true, amount: 0.08 }}
                       transition={{ duration: 0.6, delay: index * 0.07, ease: [0.215, 0.61, 0.355, 1] }}
                       className={cn(
                         'transition-all duration-500 border-b border-color-border last:border-0 group',

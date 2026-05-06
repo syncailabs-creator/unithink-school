@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Check, ArrowRight, MessageSquare, Users, Target, BookOpen, Star, ChevronDown, Quote, Volume2, VolumeX } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/src/lib/utils';
@@ -7,7 +7,7 @@ import { SEO, faqSchema, breadcrumbSchema } from '../components/SEO';
 import { DotGrid } from '../components/DotGrid';
 import { Hero } from '../components/Hero';
 
-// ─── Data ────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const plans = [
   {
@@ -15,22 +15,22 @@ const plans = [
     name: 'Live Sunday Workshop',
     price: 'Free',
     tag: 'Start Here',
-    description: 'Every Sunday · Online · Open to All · Direct Q&A with Our AI Expert',
+    description: 'Every Sunday Â· Online Â· Open to All Â· Direct Q&A with Our AI Expert',
     features: [
       'Live 90-minute AI session every Sunday',
-      'Ask your questions directly to the expert — no pre-screening, no filters',
+      'Ask your questions directly to the expert â€” no pre-screening, no filters',
       'Topic rotates weekly: automation, agents, GenAI tools, AI career guidance',
-      'Hands-on mini project each session — you build something every week',
+      'Hands-on mini project each session â€” you build something every week',
       'Attendance certificate for consistent participants (4+ sessions)',
     ],
     cta: "Join Free Sunday Workshop",
     whatsappMsg: "Hi I want to join the free Sunday AI workshop",
-    footer: "Every Sunday · 10 AM IST · Zoom · No registration fee"
+    footer: "Every Sunday Â· 10 AM IST Â· Zoom Â· No registration fee"
   },
   {
     id: 'community',
     name: 'AI Community Access',
-    price: '₹299',
+    price: 'â‚¹299',
     period: 'One-Time',
     tag: 'Most Popular',
     description: 'Join 500+ active AI learners. Daily resources. Expert access. Lifetime membership.',
@@ -39,19 +39,19 @@ const plans = [
       'Daily AI tool drops, workflow templates, and ready-to-use prompt packs',
       'Weekly exclusive resources: frameworks, use-case libraries, case studies',
       'Direct access to Unithink trainers for questions and implementation guidance',
-      'AI job and opportunity board — curated for India market',
+      'AI job and opportunity board â€” curated for India market',
       'Monthly live Q&A session with the full Unithink expert panel',
       'All recordings from Sunday live sessions archived in the group',
     ],
-    cta: "Join Community for ₹299",
+    cta: "Join Community for â‚¹299",
     whatsappMsg: "Hi I want to join the AI community for 299",
-    footer: "One-time ₹299 · Lifetime access · 500+ active members",
+    footer: "One-time â‚¹299 Â· Lifetime access Â· 500+ active members",
     highlight: true
   },
   {
     id: 'roadmap',
     name: 'Personalised AI Roadmap',
-    price: '₹999',
+    price: 'â‚¹999',
     period: 'One-Time',
     tag: 'Most Impactful',
     description: 'A custom-built AI learning path designed around your specific goals, skills, and career target.',
@@ -60,10 +60,10 @@ const plans = [
       'Custom PDF roadmap with milestones, weekly learning targets, project checkpoints',
       'Tool and platform recommendations specific to your role, industry, and career goal',
       'Curated resource list: exact courses, GitHub repos, papers, and communities',
-      '30-day check-in follow-up call — we review your progress and answer blockers',
-      'Community access included — ₹299 value, at no extra charge',
+      '30-day check-in follow-up call â€” we review your progress and answer blockers',
+      'Community access included â€” â‚¹299 value, at no extra charge',
     ],
-    cta: "Get My Roadmap for ₹999",
+    cta: "Get My Roadmap for â‚¹999",
     whatsappMsg: "Hi I want the personalised AI roadmap for 999",
     footer: "Includes: 1:1 call + Custom PDF Roadmap + 30-day follow-up + Community"
   }
@@ -81,7 +81,7 @@ const comparison = [
   { feature: 'Personalised Resource List', free: false, community: false, roadmap: true },
 ];
 
-// Testimonials — add photo path once images are available; leave empty for initials fallback
+// Testimonials â€” add photo path once images are available; leave empty for initials fallback
 const testimonials = [
   {
     quote: "The Sunday live sessions are the best 90 minutes I spend all week. I've built more AI tools in the last 2 months than in the last 2 years of watching tutorials.",
@@ -94,7 +94,7 @@ const testimonials = [
     photo: '',
   },
   {
-    quote: "I got the ₹999 roadmap before deciding whether to attend a full workshop. The 45-minute call gave me more clarity about where to focus than anything I had read online.",
+    quote: "I got the â‚¹999 roadmap before deciding whether to attend a full workshop. The 45-minute call gave me more clarity about where to focus than anything I had read online.",
     author: "Priya Shah",
     role: "Marketing Manager",
     location: "Surat",
@@ -104,7 +104,7 @@ const testimonials = [
     photo: '',
   },
   {
-    quote: "I was skeptical about paying only ₹299 for lifetime community access. Six months in, I've attended 24 Sunday sessions and landed a job that specifically mentioned my AI automation skills.",
+    quote: "I was skeptical about paying only â‚¹299 for lifetime community access. Six months in, I've attended 24 Sunday sessions and landed a job that specifically mentioned my AI automation skills.",
     author: "Arjun Patel",
     role: "Recent Graduate",
     location: "Vadodara",
@@ -114,7 +114,7 @@ const testimonials = [
     photo: '',
   },
   {
-    quote: "As a freelancer, the community gave me frameworks I could immediately package into client services. Earned back the ₹299 on day two.",
+    quote: "As a freelancer, the community gave me frameworks I could immediately package into client services. Earned back the â‚¹299 on day two.",
     author: "Neha Joshi",
     role: "Freelance Designer",
     location: "Pune",
@@ -151,52 +151,52 @@ const faqs = [
     a: "Yes. The Live Sunday Workshop is completely free. No registration fee, no credit card, no catch. We run it every Sunday at 10 AM IST on Zoom. All you need to do is send a WhatsApp message to join the group and you will receive the Zoom link every week."
   },
   {
-    q: "What happens after I pay for the ₹299 community?",
+    q: "What happens after I pay for the â‚¹299 community?",
     a: "You will receive a WhatsApp link within 24 hours to join the private AI community group. You will immediately have access to the archived resources, daily drops, and trainer channels. There are no recurring charges. Your access is lifetime."
   },
   {
-    q: "How long does the ₹999 roadmap process take?",
-    a: "After purchase, we schedule your 45-minute 1:1 call within 3–5 business days. Your custom PDF roadmap is delivered within 48 hours of the call. The 30-day follow-up call is scheduled at the time of your first call. Total engagement: under 2 hours of your time, spread across 30 days."
+    q: "How long does the â‚¹999 roadmap process take?",
+    a: "After purchase, we schedule your 45-minute 1:1 call within 3â€“5 business days. Your custom PDF roadmap is delivered within 48 hours of the call. The 30-day follow-up call is scheduled at the time of your first call. Total engagement: under 2 hours of your time, spread across 30 days."
   },
   {
-    q: "Can I upgrade from the free plan to ₹299 or ₹999?",
-    a: "Yes. There is no barrier to upgrading. If you are on the free Sunday sessions and want community access, simply pay for the ₹299 plan. If you want the 1:1 roadmap, pay ₹999 — the community access is included at no extra charge."
+    q: "Can I upgrade from the free plan to â‚¹299 or â‚¹999?",
+    a: "Yes. There is no barrier to upgrading. If you are on the free Sunday sessions and want community access, simply pay for the â‚¹299 plan. If you want the 1:1 roadmap, pay â‚¹999 â€” the community access is included at no extra charge."
   },
   {
     q: "Is the AI Mentor right for beginners?",
-    a: "Yes. The Sunday free sessions start from zero and build progressively. The ₹999 roadmap is specifically designed to assess your current level first before building a learning path. You do not need any prior AI knowledge."
+    a: "Yes. The Sunday free sessions start from zero and build progressively. The â‚¹999 roadmap is specifically designed to assess your current level first before building a learning path. You do not need any prior AI knowledge."
   },
   {
     q: "Can this lead into a full workshop later?",
-    a: "Many AI Mentor participants convert to workshop participants after experiencing the quality of Unithink's guidance. The roadmap process often identifies whether a full workshop is the logical next step for your goals. There is no obligation — but many people find it becomes the obvious next move."
+    a: "Many AI Mentor participants convert to workshop participants after experiencing the quality of Unithink's guidance. The roadmap process often identifies whether a full workshop is the logical next step for your goals. There is no obligation â€” but many people find it becomes the obvious next move."
   },
   {
     q: "What AI tools are covered in the Sunday sessions?",
-    a: "Topics rotate weekly and cover tools like ChatGPT, Claude, Gemini, n8n automation, LangChain agents, Perplexity, Notion AI, Midjourney, Runway, and emerging tools relevant to the India market. Each session focuses on one theme with a live build component — not just a demo."
+    a: "Topics rotate weekly and cover tools like ChatGPT, Claude, Gemini, n8n automation, LangChain agents, Perplexity, Notion AI, Midjourney, Runway, and emerging tools relevant to the India market. Each session focuses on one theme with a live build component â€” not just a demo."
   },
   {
-    q: "How is the ₹999 roadmap different from just Googling a learning path?",
-    a: "A Google search gives you a generic list of courses. The ₹999 roadmap is personalised to your current skill level, your specific job role or career target, and your available time each week. The 45-minute call surfaces constraints and goals that no algorithm can infer. The PDF roadmap includes milestone checkpoints, specific tools, GitHub repos, and a 30-day follow-up to review your actual progress."
+    q: "How is the â‚¹999 roadmap different from just Googling a learning path?",
+    a: "A Google search gives you a generic list of courses. The â‚¹999 roadmap is personalised to your current skill level, your specific job role or career target, and your available time each week. The 45-minute call surfaces constraints and goals that no algorithm can infer. The PDF roadmap includes milestone checkpoints, specific tools, GitHub repos, and a 30-day follow-up to review your actual progress."
   },
   {
     q: "Can organisations use the AI Mentor program for their team?",
-    a: "Yes. The community access (₹299) works well for individual employees exploring AI independently. For structured team learning, we recommend our Corporate AI Training workshops, which are purpose-built for organisational deployment."
+    a: "Yes. The community access (â‚¹299) works well for individual employees exploring AI independently. For structured team learning, we recommend our Corporate AI Training workshops, which are purpose-built for organisational deployment."
   },
   {
     q: "What is the refund policy for the paid plans?",
-    a: "For the ₹299 community: if you are not satisfied within 7 days of joining, we will refund you in full — no questions asked. For the ₹999 roadmap: if the 1:1 call does not meet your expectations, we offer a full refund before the PDF roadmap is delivered."
+    a: "For the â‚¹299 community: if you are not satisfied within 7 days of joining, we will refund you in full â€” no questions asked. For the â‚¹999 roadmap: if the 1:1 call does not meet your expectations, we offer a full refund before the PDF roadmap is delivered."
   },
 ];
 
 const audienceCards = [
   { icon: Target, title: "Professionals", desc: "Wanting to use AI in their current job to save time, improve outputs, and stay ahead of colleagues who haven't started yet." },
-  { icon: Users, title: "Freelancers", desc: "Wanting to offer AI-powered services to clients — but need a structured approach to what to learn and how to position it." },
-  { icon: MessageSquare, title: "Career Changers", desc: "Targeting AI-adjacent roles and need a clear, personalised learning roadmap to close the skill gap in 60–90 days." },
+  { icon: Users, title: "Freelancers", desc: "Wanting to offer AI-powered services to clients â€” but need a structured approach to what to learn and how to position it." },
+  { icon: MessageSquare, title: "Career Changers", desc: "Targeting AI-adjacent roles and need a clear, personalised learning roadmap to close the skill gap in 60â€“90 days." },
   { icon: BookOpen, title: "Students", desc: "Curious about AI but not yet ready to commit to a full 2-day workshop. The Sunday sessions are the perfect starting point." },
 ];
 
-// ─── HoverVideoCard ───────────────────────────────────────────────────────────
-// Autoplay muted on mount; hover → unmute; mouse leave → mute
+// â”€â”€â”€ HoverVideoCard â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Autoplay muted on mount; hover â†’ unmute; mouse leave â†’ mute
 
 interface HoverVideoCardProps {
   src: string;
@@ -227,7 +227,7 @@ function HoverVideoCard({ src, label, index }: HoverVideoCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.08 }}
       transition={{ duration: 0.6, delay: index * 0.12 }}
       className="group relative rounded-[2rem] overflow-hidden border border-color-border bg-color-bg shadow-soft hover:border-color-accent/40 hover:shadow-xl hover:shadow-color-accent/8 transition-all duration-500 cursor-pointer"
       onMouseEnter={handleMouseEnter}
@@ -245,7 +245,7 @@ function HoverVideoCard({ src, label, index }: HoverVideoCardProps) {
           className="w-full h-full object-cover"
         />
 
-        {/* Sound state indicator — bottom left corner */}
+        {/* Sound state indicator â€” bottom left corner */}
         <div
           className={cn(
             "absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-medium uppercase tracking-[0.06em] transition-all duration-300",
@@ -278,7 +278,7 @@ function HoverVideoCard({ src, label, index }: HoverVideoCardProps) {
   );
 }
 
-// ─── TestimonialCard (used in marquee) ───────────────────────────────────────
+// â”€â”€â”€ TestimonialCard (used in marquee) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   return (
@@ -318,7 +318,7 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
         <div className="min-w-0">
           <p className="text-sm font-bold text-color-text truncate">{t.author}</p>
           <p className="text-[10px] text-color-text-muted font-semibold uppercase tracking-wider truncate">
-            {t.role} · {t.location}
+            {t.role} Â· {t.location}
           </p>
         </div>
         <span className="ml-auto text-[9px] font-medium uppercase tracking-[0.06em] px-2.5 py-1 rounded-full border flex-shrink-0"
@@ -330,7 +330,7 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   );
 }
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export function AIMentor() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -343,7 +343,7 @@ export function AIMentor() {
     <div className="pt-20 relative overflow-hidden">
       <SEO
         title="AI Mentor India | Free Sunday Workshop"
-        description="Your personal AI growth partner. Free Sunday AI workshops, ₹299 community access, or ₹999 personalised roadmap. Expert-led. For India's AI learners."
+        description="Your personal AI growth partner. Free Sunday AI workshops, â‚¹299 community access, or â‚¹999 personalised roadmap. Expert-led. For India's AI learners."
         keywords="AI mentor India, free AI workshop India, AI learning roadmap, AI community India, personalised AI guidance, AI for beginners India, AI career guidance, Sunday AI workshop, learning agent in AI, AI roadmap for students India"
         canonical="/ai-mentor"
         jsonLd={[
@@ -356,7 +356,7 @@ export function AIMentor() {
             "@type": "Service",
             "name": "AI Mentor by Unithink School",
             "url": "https://www.unithinkschool.com/ai-mentor",
-            "description": "Personal AI growth partner offering free Sunday live workshops, ₹299 private community access, and ₹999 personalised AI roadmap with 1:1 expert call.",
+            "description": "Personal AI growth partner offering free Sunday live workshops, â‚¹299 private community access, and â‚¹999 personalised AI roadmap with 1:1 expert call.",
             "provider": {
               "@type": "Organization",
               "name": "Unithink School",
@@ -387,14 +387,14 @@ export function AIMentor() {
       <Hero
         eyebrow="AI Mentor"
         title={<>Your Personal AI <span className="text-color-accent">Growth Partner.</span></>}
-        subheadline="Not ready for a full workshop? Start your AI journey with direct expert guidance — at your pace, around your goals, at a price that removes every barrier."
+        subheadline="Not ready for a full workshop? Start your AI journey with direct expert guidance â€” at your pace, around your goals, at a price that removes every barrier."
         primaryCTA={{ text: "Join Free Sunday Session", href: "https://wa.me/919726217070?text=Hi%20I%20want%20to%20join%20the%20free%20Sunday%20AI%20workshop" }}
         secondaryCTA={{ text: "Get Personalised Roadmap", href: "/contact" }}
-        trustLine="500+ Active Community Members · Live Every Sunday 10 AM IST · Expert-Led · No Pre-Recorded Content"
-        image={{ src: '/content/AI Mentor image banner.jpeg', alt: 'AI Mentor Program' }}
+        trustLine="500+ Active Community Members Â· Live Every Sunday 10 AM IST Â· Expert-Led Â· No Pre-Recorded Content"
+        image={{ src: '/content/ai-mentor-banner.jpeg', alt: 'AI Mentor Program' }}
       />
 
-      {/* ── Positioning ──────────────────────────────────────────────────── */}
+      {/* â”€â”€ Positioning â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-14 md:py-20 lg:py-24 bg-color-bg-2 border-y border-color-border relative overflow-hidden px-3 md:px-5">
         <DotGrid />
         <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -422,7 +422,7 @@ export function AIMentor() {
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="bg-color-bg p-7 rounded-[2.5rem] border border-color-border shadow-soft hover:border-color-accent/20 transition-all duration-500 group"
                 >
@@ -440,14 +440,14 @@ export function AIMentor() {
         </div>
       </section>
 
-      {/* ── Pricing Plans ────────────────────────────────────────────────── */}
+      {/* â”€â”€ Pricing Plans â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-14 md:py-20 lg:py-24 bg-color-bg relative overflow-hidden px-3 md:px-5">
         <DotGrid />
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             className="flex flex-col gap-6 text-left items-start mb-8 md:mb-14 lg:mb-20"
           >
             <span className="type-h6 text-color-accent">Choose Your Starting Point</span>
@@ -456,7 +456,7 @@ export function AIMentor() {
               <span className="text-color-text-2 font-extrabold">Scale When You're Ready.</span>
             </h2>
             <p className="type-p1 text-color-text-2 max-w-[640px]">
-              Every plan moves you from where you are to where you want to be. No pressure to upgrade — the value speaks for itself.
+              Every plan moves you from where you are to where you want to be. No pressure to upgrade â€” the value speaks for itself.
             </p>
           </motion.div>
 
@@ -466,7 +466,7 @@ export function AIMentor() {
                 key={plan.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.7, delay: i * 0.15 }}
                 className={cn(
                   "relative flex flex-col p-10 rounded-[3rem] border transition-all duration-500",
@@ -526,7 +526,7 @@ export function AIMentor() {
         </div>
       </section>
 
-      {/* ── Comparison Table ─────────────────────────────────────────────── */}
+      {/* â”€â”€ Comparison Table â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-14 md:py-20 lg:py-24 bg-color-bg-2 relative overflow-hidden px-3 md:px-5">
         <DotGrid />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full pointer-events-none"
@@ -535,7 +535,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
@@ -544,14 +544,14 @@ export function AIMentor() {
               Plan <span className="text-color-accent">Comparison</span>
             </h2>
             <p className="type-p1 text-color-text-2 max-w-[640px]">
-              See exactly what's included in each tier — pick the one that matches where you are right now.
+              See exactly what's included in each tier â€” pick the one that matches where you are right now.
             </p>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, delay: 0.1 }}
             className="rounded-[3rem] border border-color-border overflow-hidden shadow-soft bg-color-bg"
           >
@@ -571,13 +571,13 @@ export function AIMentor() {
                     <th className="px-6 py-6 text-center" style={{ background: 'rgba(251,176,59,0.06)' }}>
                       <div className="flex flex-col items-center gap-1">
                         <span className="text-[9px] font-black uppercase tracking-[0.2em] text-color-accent">Community</span>
-                        <span className="text-xl font-heading font-black text-color-accent">₹299</span>
+                        <span className="text-xl font-heading font-black text-color-accent">â‚¹299</span>
                       </div>
                     </th>
                     <th className="px-6 py-6 text-center bg-color-bg-2">
                       <div className="flex flex-col items-center gap-1">
                         <span className="text-[9px] font-medium uppercase tracking-[0.06em] text-color-text-muted">Roadmap</span>
-                        <span className="text-xl font-heading font-black text-color-text">₹999</span>
+                        <span className="text-xl font-heading font-black text-color-text">â‚¹999</span>
                       </div>
                     </th>
                   </tr>
@@ -588,7 +588,7 @@ export function AIMentor() {
                       key={i}
                       initial={{ opacity: 0, x: -12 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: false, amount: 0.08 }}
+                      viewport={{ once: true, amount: 0.08 }}
                       transition={{ duration: 0.5, delay: i * 0.05 }}
                       className="border-b border-color-border last:border-0 hover:bg-color-bg-2 group transition-all duration-300"
                     >
@@ -598,17 +598,17 @@ export function AIMentor() {
                       <td className="px-6 py-5 text-center">
                         {row.free
                           ? <div className="w-6 h-6 rounded-full bg-color-accent/15 flex items-center justify-center mx-auto"><Check className="w-3.5 h-3.5 text-color-accent" /></div>
-                          : <span className="text-color-text-muted/30 text-lg font-light">—</span>}
+                          : <span className="text-color-text-muted/30 text-lg font-light">â€”</span>}
                       </td>
                       <td className="px-6 py-5 text-center" style={{ background: 'rgba(251,176,59,0.03)' }}>
                         {row.community
                           ? <div className="w-6 h-6 rounded-full flex items-center justify-center mx-auto" style={{ background: 'rgba(251,176,59,0.2)' }}><Check className="w-3.5 h-3.5 text-color-accent" /></div>
-                          : <span className="text-color-text-muted/30 text-lg font-light">—</span>}
+                          : <span className="text-color-text-muted/30 text-lg font-light">â€”</span>}
                       </td>
                       <td className="px-6 py-5 text-center">
                         {row.roadmap
                           ? <div className="w-6 h-6 rounded-full bg-color-accent/15 flex items-center justify-center mx-auto"><Check className="w-3.5 h-3.5 text-color-accent" /></div>
-                          : <span className="text-color-text-muted/30 text-lg font-light">—</span>}
+                          : <span className="text-color-text-muted/30 text-lg font-light">â€”</span>}
                       </td>
                     </motion.tr>
                   ))}
@@ -619,7 +619,7 @@ export function AIMentor() {
         </div>
       </section>
 
-      {/* ── What Our Participants Say ─────────────────────────────────────── */}
+      {/* â”€â”€ What Our Participants Say â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-14 md:py-20 lg:py-24 bg-color-bg relative overflow-hidden px-3 md:px-5">
         <DotGrid />
 
@@ -628,7 +628,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7 }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -642,14 +642,14 @@ export function AIMentor() {
           </motion.div>
         </div>
 
-        {/* Row 1 — scrolls left */}
+        {/* Row 1 â€” scrolls left */}
         <div className="overflow-hidden mb-5 relative z-10">
           <div className="flex gap-5 animate-marquee">
             {row1.map((t, i) => <TestimonialCard key={i} t={t} />)}
           </div>
         </div>
 
-        {/* Row 2 — scrolls right */}
+        {/* Row 2 â€” scrolls right */}
         <div className="overflow-hidden relative z-10">
           <div className="flex gap-5 animate-marquee-reverse">
             {row2.map((t, i) => <TestimonialCard key={i} t={t} />)}
@@ -657,7 +657,7 @@ export function AIMentor() {
         </div>
       </section>
 
-      {/* ── Workshop Videos ───────────────────────────────────────────────── */}
+      {/* â”€â”€ Workshop Videos â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-14 md:py-20 lg:py-24 bg-color-bg-2 relative overflow-hidden px-3 md:px-5">
         <DotGrid />
         <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -666,7 +666,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7 }}
             className="flex flex-col gap-6 text-left items-start mb-6 md:mb-10 lg:mb-14"
           >
@@ -682,9 +682,9 @@ export function AIMentor() {
           {/* 3 Video cards */}
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { src: '/content/1.mp4', label: 'Live Sunday AI Session' },
-              { src: '/content/1.mp4', label: 'Community Q&A Highlight' },
-              { src: '/content/1.mp4', label: 'AI Agent Build — n8n Demo' },
+              { src: '/content/ws_video3.mp4', label: 'Live Sunday AI Session' },
+              { src: '/content/ws_video3.mp4', label: 'Community Q&A Highlight' },
+              { src: '/content/fac2.mp4', label: 'AI Agent Build — n8n Demo'AI Agent Build â€” n8n Demo' },
             ].map((v, i) => (
               <HoverVideoCard key={i} src={v.src} label={v.label} index={i} />
             ))}
@@ -692,7 +692,7 @@ export function AIMentor() {
         </div>
       </section>
 
-      {/* ── FAQ ──────────────────────────────────────────────────────────── */}
+      {/* â”€â”€ FAQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-14 md:py-20 lg:py-24 bg-color-bg relative overflow-hidden px-3 md:px-5">
         <DotGrid />
         <div
@@ -703,7 +703,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
@@ -712,7 +712,7 @@ export function AIMentor() {
               Frequently Asked <span className="text-color-accent">Questions</span>
             </h2>
             <p className="type-p1 text-color-text-2 max-w-[640px]">
-              Everything about the AI Mentor program — answered clearly and honestly.
+              Everything about the AI Mentor program â€” answered clearly and honestly.
             </p>
           </motion.div>
 
@@ -722,7 +722,7 @@ export function AIMentor() {
                 key={i}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ delay: Math.min(i * 0.05, 0.3), duration: 0.5 }}
                 className="bg-color-bg-2 rounded-[2rem] border border-color-border shadow-soft overflow-hidden transition-all duration-300 hover:border-color-accent/20"
               >
@@ -761,7 +761,7 @@ export function AIMentor() {
         </div>
       </section>
 
-      {/* ── Final CTA ────────────────────────────────────────────────────── */}
+      {/* â”€â”€ Final CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-14 md:py-20 lg:py-24 bg-color-bg relative overflow-hidden px-3 md:px-5">
         <DotGrid />
         <div className="max-w-7xl mx-auto w-full relative z-10">

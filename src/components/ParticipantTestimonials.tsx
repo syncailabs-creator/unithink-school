@@ -1,4 +1,4 @@
-import { DotGrid } from './DotGrid';
+﻿import { DotGrid } from './DotGrid';
 import { motion } from 'motion/react';
 import { useRef, useState, useEffect, useCallback } from 'react';
 import { Volume2, VolumeX, Quote, Maximize2 } from 'lucide-react';
@@ -92,7 +92,7 @@ function VideoTestimonialCard({ video, index }: { video: VideoTestimonial; index
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.08 }}
       transition={{ duration: 0.55, delay: index * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
       className="group bg-color-bg-2 rounded-[2rem] border border-color-border overflow-hidden shadow-soft hover:border-color-accent/40 hover:shadow-xl hover:shadow-color-accent/8 transition-all duration-500 flex flex-col"
       onMouseEnter={handleMouseEnter}
@@ -178,7 +178,7 @@ export function ParticipantTestimonials({
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -193,7 +193,7 @@ export function ParticipantTestimonials({
             </p>
           </motion.div>
 
-          {/* Video testimonials — 3-col grid */}
+          {/* Video testimonials â€” 3-col grid */}
           {videos.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
               {videos.map((video, i) => (
@@ -202,7 +202,7 @@ export function ParticipantTestimonials({
             </div>
           )}
 
-          {/* Text testimonials — matches home page card style exactly */}
+          {/* Text testimonials â€” matches home page card style exactly */}
           {textTestimonials.length > 0 && (
             <div className="grid md:grid-cols-3 gap-6">
               {textTestimonials.map((t, i) => (
@@ -210,7 +210,7 @@ export function ParticipantTestimonials({
                   key={i}
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.6, delay: i * 0.12 }}
                   className="bg-color-bg-2 rounded-[2.5rem] p-8 border border-color-border shadow-soft flex flex-col gap-6 group hover:border-color-accent/25 transition-all duration-500"
                 >

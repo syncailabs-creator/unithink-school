@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { FormatCard } from '../types';
 import { Check, ArrowRight, Download } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
@@ -32,7 +32,7 @@ export function FormatSection({ eyebrow, title, description, note, formats, broc
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -127,7 +127,7 @@ export function FormatSection({ eyebrow, title, description, note, formats, broc
                   </div>
                   {active.isPopular && (
                     <div className="inline-flex items-center self-start px-5 py-2 rounded-full bg-color-accent/10 border border-color-accent/30 text-color-accent text-[10px] font-medium uppercase tracking-[0.06em]">
-                      ★ Most Popular
+                      â˜… Most Popular
                     </div>
                   )}
                 </div>

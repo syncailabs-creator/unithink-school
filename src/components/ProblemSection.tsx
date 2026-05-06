@@ -1,4 +1,4 @@
-import { DotGrid } from './DotGrid';
+﻿import { DotGrid } from './DotGrid';
 import { motion } from 'motion/react';
 import { ProblemCard } from '../types';
 
@@ -22,7 +22,7 @@ export function ProblemSection({ eyebrow, title, description, cards }: ProblemSe
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -46,7 +46,7 @@ export function ProblemSection({ eyebrow, title, description, cards }: ProblemSe
                 key={card.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.8, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                 className="bg-color-bg p-10 md:p-12 rounded-[3rem] border border-color-border hover:border-color-accent/30 transition-all duration-700 group relative overflow-hidden shadow-soft"
               >

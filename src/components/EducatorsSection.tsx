@@ -1,4 +1,4 @@
-import { DotGrid } from './DotGrid';
+﻿import { DotGrid } from './DotGrid';
 import { motion } from 'motion/react';
 import { Linkedin, Award } from 'lucide-react';
 
@@ -40,7 +40,7 @@ const educators: Educator[] = [
   },
   {
     name: 'Manali Patel',
-    position: 'AI Automation Consultant · BA & PM',
+    position: 'AI Automation Consultant Â· BA & PM',
     description: 'Leads corporate and faculty AI programmes. Specialist in n8n, Make.com, and no-code AI automation workflows.',
     photo: '/content/team/manali.jpg',
     linkedin: 'https://linkedin.com',
@@ -89,7 +89,7 @@ export function EducatorsSection({ eyebrow = 'Our Educators', title = 'Trained b
               {title}
             </h2>
             <p className="type-p1 text-color-text-2 max-w-[580px]">
-              Every session is led by active AI practitioners — people building with these tools daily, not reading about them.
+              Every session is led by active AI practitioners â€” people building with these tools daily, not reading about them.
             </p>
           </div>
 
@@ -100,11 +100,11 @@ export function EducatorsSection({ eyebrow = 'Our Educators', title = 'Trained b
                 key={edu.name}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.5, delay: index * 0.08, ease: [0.215, 0.61, 0.355, 1] }}
                 className="group bg-color-bg-2 border border-color-border rounded-2xl overflow-hidden flex flex-col hover:border-color-accent/30 hover:shadow-xl hover:shadow-color-accent/5 transition-all duration-500"
               >
-                {/* Photo — full bleed top */}
+                {/* Photo â€” full bleed top */}
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/3' }}>
                   {edu.photo ? (
                     <img

@@ -156,7 +156,7 @@ export function WorkshopGallery({
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.6 }}
           className="text-left mb-12"
         >
@@ -176,7 +176,7 @@ export function WorkshopGallery({
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.05 }}
+              viewport={{ once: true, amount: 0.05 }}
               transition={{ duration: 0.5, delay: (i % 6) * 0.07 }}
               className="group relative rounded-2xl overflow-hidden cursor-pointer border border-color-border hover:border-color-accent/40 transition-all duration-500 shadow-soft hover:shadow-xl hover:shadow-color-accent/10"
               style={{ aspectRatio: '4/3' }}
@@ -223,7 +223,7 @@ export function WorkshopGallery({
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 text-center text-sm text-color-text-muted font-medium"
         >

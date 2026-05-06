@@ -1,4 +1,4 @@
-import { DotGrid } from './DotGrid';
+﻿import { DotGrid } from './DotGrid';
 import { motion } from 'motion/react';
 
 interface Tool {
@@ -34,7 +34,7 @@ const audienceContent = {
   corporate: {
     eyebrow: 'Tools We Teach',
     title: 'Industry-Standard AI Platforms. Real Access. Real Builds.',
-    description: 'Every tool below is taught live during your workshop — not in demos, but in actual workflow builds. Participants get hands-on experience with the same platforms leading companies are using right now.',
+    description: 'Every tool below is taught live during your workshop â€” not in demos, but in actual workflow builds. Participants get hands-on experience with the same platforms leading companies are using right now.',
   },
   students: {
     eyebrow: 'Tools You Will Master',
@@ -44,7 +44,7 @@ const audienceContent = {
   faculty: {
     eyebrow: 'Tools We Teach',
     title: 'AI Tools That Transform How You Teach, Research, and Administer.',
-    description: 'Selected specifically for academic workflows — from lecture preparation to research acceleration to NAAC documentation. Every tool has a direct application in your daily work.',
+    description: 'Selected specifically for academic workflows â€” from lecture preparation to research acceleration to NAAC documentation. Every tool has a direct application in your daily work.',
   },
   general: {
     eyebrow: 'Tools We Teach',
@@ -68,7 +68,7 @@ export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -90,7 +90,7 @@ export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
                 key={tool.name}
                 initial={{ opacity: 0, y: 16, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.4, delay: index * 0.04, ease: [0.215, 0.61, 0.355, 1] }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 className="group bg-color-bg border border-color-border rounded-2xl p-3 md:p-4 flex flex-col items-center gap-2.5 hover:border-color-accent/30 hover:shadow-lg hover:shadow-color-accent/5 transition-all duration-300 cursor-default"
@@ -118,7 +118,7 @@ export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
           </div>
 
           <p className="text-xs text-color-text-muted text-center font-normal">
-            Tool selection is customised per workshop · All tools have free tiers or access is provided
+            Tool selection is customised per workshop Â· All tools have free tiers or access is provided
           </p>
         </div>
       </div>

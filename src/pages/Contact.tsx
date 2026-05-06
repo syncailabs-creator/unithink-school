@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Phone, Mail, MessageSquare, Check, Clock, Send, MapPin, Star, Building, Users, ChevronDown, ArrowRight } from 'lucide-react';
 import { SEO, breadcrumbSchema, localBusinessSchema } from '../components/SEO';
 import { DotGrid } from '../components/DotGrid';
@@ -6,8 +6,8 @@ import { cn } from '@/src/lib/utils';
 import React, { useState } from 'react';
 
 const steps = [
-  { step: 1, title: 'Requirement Review', desc: 'We review your requirements within 24 hours — by a trainer, not a sales bot.' },
-  { step: 2, title: 'Tailored Proposal', desc: 'A specific program recommendation, curriculum outline, and pricing breakdown — in 48 hours.' },
+  { step: 1, title: 'Requirement Review', desc: 'We review your requirements within 24 hours â€” by a trainer, not a sales bot.' },
+  { step: 2, title: 'Tailored Proposal', desc: 'A specific program recommendation, curriculum outline, and pricing breakdown â€” in 48 hours.' },
   { step: 3, title: 'Discovery Call (Free)', desc: 'A 30-minute call to finalise scope, timeline, and any customisation needed.' },
   { step: 4, title: 'Booking Confirmation', desc: 'Workshop confirmed. Pre-workshop materials and participant onboarding sent immediately.' },
 ];
@@ -23,7 +23,7 @@ const socialProof = [
 const faqs = [
   {
     q: "How quickly will I receive a response?",
-    a: "All enquiries submitted through the form receive a response within 24 hours, Monday to Saturday. WhatsApp messages typically receive a response within 2–4 hours during business hours."
+    a: "All enquiries submitted through the form receive a response within 24 hours, Monday to Saturday. WhatsApp messages typically receive a response within 2â€“4 hours during business hours."
   },
   {
     q: "What information should I include for the fastest proposal?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Can I request a workshop for a specific date?",
-    a: "Yes. Mention your preferred date in the message field. Standard formats can be booked and delivered within 7–14 days. Custom programs may require 2–3 weeks."
+    a: "Yes. Mention your preferred date in the message field. Standard formats can be booked and delivered within 7â€“14 days. Custom programs may require 2â€“3 weeks."
   },
   {
     q: "Do you have a physical office?",
@@ -69,7 +69,7 @@ export function Contact() {
   return (
     <div className="pt-20 relative overflow-hidden">
       <SEO
-        title="Contact Us — Book Your AI Training"
+        title="Contact Us â€” Book Your AI Training"
         description="Get in touch with Unithink School to plan your AI training. We respond within 24 hours with a tailored program recommendation. Based in Ahmedabad, delivering workshops across India."
         keywords="contact AI training India, book AI workshop, AI training enquiry, Unithink School contact, AI workshop Ahmedabad"
         canonical="/contact"
@@ -172,7 +172,7 @@ export function Contact() {
               <motion.div
                 initial={{ opacity: 0, x: -24 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
                 className="rounded-[2.5rem] border border-color-border overflow-hidden shadow-soft"
                 style={{ background: 'var(--color-bg)' }}
@@ -196,7 +196,7 @@ export function Contact() {
                         key={i}
                         initial={{ opacity: 0, x: -16 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false, amount: 0.08 }}
+                        viewport={{ once: true, amount: 0.08 }}
                         transition={{ duration: 0.5, delay: i * 0.1 }}
                         className="flex gap-5 group"
                       >
@@ -235,7 +235,7 @@ export function Contact() {
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
                 className="rounded-[2.5rem] border border-color-border sticky top-28 shadow-soft overflow-hidden"
                 style={{ background: 'var(--color-bg)' }}
@@ -263,7 +263,7 @@ export function Contact() {
                       We've received your enquiry. A trainer will respond within 24 hours with a tailored recommendation.
                     </p>
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-color-accent mb-10">
-                      Check WhatsApp — we often respond there first.
+                      Check WhatsApp â€” we often respond there first.
                     </p>
                     <button
                       onClick={() => setFormState('idle')}
@@ -280,7 +280,7 @@ export function Contact() {
                         <span className="text-[10px] font-medium uppercase tracking-[0.06em] text-color-accent">We respond within 24 hours</span>
                       </div>
                       <h3 className="type-h3 text-color-text mb-2">Request a Consultation</h3>
-                      <p className="text-sm text-color-text-muted font-medium">Fill in your details — we'll come back with a specific program recommendation.</p>
+                      <p className="text-sm text-color-text-muted font-medium">Fill in your details â€” we'll come back with a specific program recommendation.</p>
                     </div>
 
                     <form onSubmit={handleSubmit} className="space-y-5">
@@ -329,10 +329,10 @@ export function Contact() {
                           <label className="text-[10px] font-medium uppercase tracking-[0.06em] text-color-text-muted">Expected Audience Size</label>
                           <select className="w-full bg-color-bg-2 border border-color-border rounded-2xl px-4 py-3.5 text-color-text focus:outline-none focus:border-color-accent/50 transition-colors font-medium text-sm">
                             <option value="">Select size</option>
-                            <option value="10-50">10–50</option>
-                            <option value="50-100">50–100</option>
-                            <option value="100-200">100–200</option>
-                            <option value="200-500">200–500</option>
+                            <option value="10-50">10â€“50</option>
+                            <option value="50-100">50â€“100</option>
+                            <option value="100-200">100â€“200</option>
+                            <option value="200-500">200â€“500</option>
                             <option value="500+">500+</option>
                             <option value="not-sure">Not Sure Yet</option>
                           </select>
@@ -343,7 +343,7 @@ export function Contact() {
                             <option value="">Select timeline</option>
                             <option value="2-weeks">Within 2 weeks</option>
                             <option value="1-month">Within a month</option>
-                            <option value="1-3-months">1–3 months</option>
+                            <option value="1-3-months">1â€“3 months</option>
                             <option value="exploring">Just exploring</option>
                           </select>
                         </div>
@@ -379,7 +379,7 @@ export function Contact() {
                         )}
                       </button>
                       <p className="text-[10px] text-center text-color-text-muted uppercase tracking-[0.06em] font-medium">
-                        Response within 24h · Tailored proposal · No spam · No commitment required
+                        Response within 24h Â· Tailored proposal Â· No spam Â· No commitment required
                       </p>
                     </form>
                   </div>
@@ -388,11 +388,11 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Direct Line — full width below both columns */}
+          {/* Direct Line â€” full width below both columns */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="mt-10 rounded-[2.5rem] border border-color-border overflow-hidden shadow-soft"
             style={{ background: 'var(--color-bg)' }}
@@ -415,7 +415,7 @@ export function Contact() {
                   icon: Phone,
                   label: "Call / WhatsApp",
                   value: "+91 9726217070",
-                  note: "Mon–Sat, 9 AM – 7 PM IST",
+                  note: "Monâ€“Sat, 9 AM â€“ 7 PM IST",
                   hoverColor: 'rgba(251,176,59,1)',
                   hoverBg: 'rgba(251,176,59,0.08)',
                 },
@@ -424,7 +424,7 @@ export function Contact() {
                   icon: MessageSquare,
                   label: "WhatsApp",
                   value: "Fastest Response",
-                  note: "Typically replies in 2–4 hours",
+                  note: "Typically replies in 2â€“4 hours",
                   hoverColor: '#25D366',
                   hoverBg: 'rgba(37,211,102,0.08)',
                 },
@@ -445,7 +445,7 @@ export function Contact() {
                   rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="flex items-center gap-4 p-4 rounded-2xl border border-transparent transition-all duration-300 group"
                   style={{ background: 'rgba(var(--color-bg-2-rgb, 248,248,250), 1)' }}
@@ -488,7 +488,7 @@ export function Contact() {
         </div>
       </section>
 
-      {/* FAQ — Accordion */}
+      {/* FAQ â€” Accordion */}
       <section className="pt-24 md:pt-36 pb-12 md:pb-20 lg:pb-28 bg-color-bg relative overflow-hidden px-3 md:px-5">
         <DotGrid />
         <div
@@ -500,7 +500,7 @@ export function Contact() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
@@ -519,7 +519,7 @@ export function Contact() {
                 key={i}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ delay: i * 0.06, duration: 0.5 }}
                 className="rounded-[2rem] border border-color-border shadow-soft overflow-hidden transition-all duration-300 hover:border-color-accent/20"
                 style={{ background: 'var(--color-bg)' }}

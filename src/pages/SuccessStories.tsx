@@ -127,7 +127,7 @@ function FeedbackVideoCard({ src, label, tag, index }: { src: string; label: str
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.08 }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
       className="group rounded-2xl overflow-hidden border border-color-border bg-color-bg shadow-soft hover:border-color-accent/40 transition-all duration-500 flex flex-col"
     >
@@ -361,7 +361,7 @@ export function SuccessStories() {
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.8, delay: i * 0.15 }}
                 className="bg-color-bg p-6 lg:p-8 rounded-2xl lg:rounded-[2.5rem] border border-color-border text-center group hover:border-color-accent/30 transition-all duration-700 shadow-soft"
               >
@@ -402,10 +402,10 @@ export function SuccessStories() {
           {/* ── 4 feedback videos ── */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {[
-              { src: '/content/fac1.MP4', label: 'Student Feedback', tag: 'Student SDP' },
-              { src: '/content/fac2.MP4', label: 'Corporate Feedback', tag: 'Corporate' },
-              { src: '/content/fac3.MP4', label: 'Faculty Feedback', tag: 'Faculty FDP' },
-              { src: '/content/fac1.MP4', label: 'Project Showcase', tag: 'Showcase' },
+              { src: '/content/fac1.mp4', label: 'Student Feedback', tag: 'Student SDP' },
+              { src: '/content/fac2.mp4', label: 'Corporate Feedback', tag: 'Corporate' },
+              { src: '/content/fac3.mp4', label: 'Faculty Feedback', tag: 'Faculty FDP' },
+              { src: '/content/fac1.mp4', label: 'Project Showcase', tag: 'Showcase' },
             ].map((v, i) => (
               <FeedbackVideoCard key={v.src} src={v.src} label={v.label} tag={v.tag} index={i} />
             ))}
@@ -460,7 +460,7 @@ export function SuccessStories() {
                   key={i}
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.6, delay: (i % 3) * 0.1 }}
                   className="bg-color-bg rounded-[2.5rem] p-8 border border-color-border shadow-soft flex flex-col gap-6 group hover:border-color-accent/25 transition-all duration-500"
                 >
@@ -519,7 +519,7 @@ export function SuccessStories() {
                       key={i}
                       initial={{ opacity: 0, x: -8 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: false, amount: 0.08 }}
+                      viewport={{ once: true, amount: 0.08 }}
                       transition={{ duration: 0.4, delay: i * 0.06 }}
                       className="border-b border-color-border hover:bg-color-bg-2 transition-colors duration-300 group"
                     >
@@ -543,7 +543,7 @@ export function SuccessStories() {
                               <motion.div
                                 initial={{ width: 0 }}
                                 whileInView={{ width: `${(row.count / 450) * 100}%` }}
-                                viewport={{ once: false, amount: 0.08 }}
+                                viewport={{ once: true, amount: 0.08 }}
                                 transition={{ duration: 0.9, delay: i * 0.06, ease: [0.4, 0, 0.2, 1] }}
                                 className="h-full rounded-full"
                                 style={{ background: 'linear-gradient(90deg, #FBB03B, rgba(251,176,59,0.5))' }}
@@ -583,7 +583,7 @@ export function SuccessStories() {
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.5, delay: (i % 4) * 0.1 }}
                   className="bg-color-bg p-8 rounded-[2.5rem] border border-color-border shadow-soft flex gap-6 group hover:border-color-accent/20 transition-all duration-500"
                 >
@@ -615,7 +615,7 @@ export function SuccessStories() {
                 key={i}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 1, ease: [0.215, 0.61, 0.355, 1] }}
                 className="grid lg:grid-cols-12 gap-12 items-start"
               >
@@ -647,7 +647,7 @@ export function SuccessStories() {
                         key={j}
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: false, amount: 0.08 }}
+                        viewport={{ once: true, amount: 0.08 }}
                         transition={{ duration: 0.4, delay: j * 0.1 }}
                         className="bg-color-bg p-5 rounded-[2rem] border border-color-border text-center group hover:border-color-accent/30 transition-all duration-500"
                       >
@@ -699,7 +699,7 @@ export function SuccessStories() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 1, ease: [0.215, 0.61, 0.355, 1] }}
             className="bg-color-bg p-8 md:p-14 rounded-2xl lg:rounded-[3rem] border border-color-border text-center shadow-soft relative overflow-hidden"
           >

@@ -1,4 +1,4 @@
-import { Hero } from '../components/Hero';
+﻿import { Hero } from '../components/Hero';
 import { TrustBar } from '../components/TrustBar';
 import { Stats } from '../components/Stats';
 import { ProblemSection } from '../components/ProblemSection';
@@ -23,7 +23,7 @@ const hubStats = [
 const tracks = [
   {
     title: "Corporate AI Training",
-    description: "For businesses and teams that need to implement AI — not just understand it.",
+    description: "For businesses and teams that need to implement AI â€” not just understand it.",
     icon: <Building2 className="w-8 h-8" />,
     href: "/corporate",
     bestFor: "HR/L&D teams, department heads, CXOs, and SMEs looking for operational efficiency.",
@@ -31,7 +31,7 @@ const tracks = [
       "Custom curriculum built around your workflows",
       "Live builds: automation, agents, pipelines",
       "40% average efficiency improvement",
-      "10–15 hours saved per employee/week"
+      "10â€“15 hours saved per employee/week"
     ]
   },
   {
@@ -66,12 +66,12 @@ const principles = [
   {
     principle: "Workshop-First Learning",
     other: "Theory lectures, passive watching",
-    unithink: "Build first, understand why second — every session starts with doing"
+    unithink: "Build first, understand why second â€” every session starts with doing"
   },
   {
     principle: "Fully Customised",
     other: "Generic off-the-shelf content for all clients",
-    unithink: "Discovery call → curriculum built around your specific challenges"
+    unithink: "Discovery call â†’ curriculum built around your specific challenges"
   },
   {
     principle: "Practitioners as Trainers",
@@ -104,7 +104,7 @@ export function WorkshopsHub() {
     <div className="flex flex-col relative overflow-hidden">
       <SEO
         title="AI Training Workshops India | All Programs"
-        description="Explore all Unithink AI training programs — Corporate, Students & Faculty. Every workshop ends with a built and deployed AI system. India & Gujarat."
+        description="Explore all Unithink AI training programs â€” Corporate, Students & Faculty. Every workshop ends with a built and deployed AI system. India & Gujarat."
         keywords="AI workshops India, hands-on AI workshop, AI training programs India, corporate AI training, AI workshop for students, AICTE FDP AI, Parivartan Method AI, AI training Ahmedabad, technology workshop India, AI skill development"
         canonical="/ai-workshops"
         jsonLd={[
@@ -116,7 +116,7 @@ export function WorkshopsHub() {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "name": "Unithink School AI Training Programs",
-            "description": "All AI workshop tracks offered by Unithink School — Corporate, Student, and Faculty programs.",
+            "description": "All AI workshop tracks offered by Unithink School â€” Corporate, Student, and Faculty programs.",
             "url": "https://www.unithinkschool.com/ai-workshops",
             "numberOfItems": 3,
             "itemListElement": [
@@ -166,7 +166,7 @@ export function WorkshopsHub() {
       </div>
 
       <Hero
-        eyebrow="AI Workshops — India"
+        eyebrow="AI Workshops â€” India"
         title={<>Workshops Where You <span className="text-color-accent">Build & Deploy</span>.</>}
         subheadline="Purpose-built programs for corporate teams, engineering students, and faculty. One outcome: you leave with something deployed."
         primaryCTA={{ text: "Explore All Programs", href: "#tracks" }}
@@ -185,7 +185,7 @@ export function WorkshopsHub() {
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.08 }}
+              viewport={{ once: true, amount: 0.08 }}
               transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-5 text-left items-start"
             >
@@ -212,7 +212,7 @@ export function WorkshopsHub() {
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.08 }}
+              viewport={{ once: true, amount: 0.08 }}
               transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-4 text-left items-start"
             >
@@ -230,7 +230,7 @@ export function WorkshopsHub() {
                   key={track.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.8, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                   className="bg-color-bg p-8 rounded-3xl border border-color-border hover:border-color-accent/30 transition-all duration-700 group flex flex-col gap-6 shadow-soft relative overflow-hidden"
                 >
@@ -279,7 +279,7 @@ export function WorkshopsHub() {
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.08 }}
+              viewport={{ once: true, amount: 0.08 }}
               transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-6 text-left items-start"
             >
@@ -307,7 +307,7 @@ export function WorkshopsHub() {
                         key={i}
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false, amount: 0.08 }}
+                        viewport={{ once: true, amount: 0.08 }}
                         transition={{ duration: 0.8, delay: i * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
                         className="border-b border-color-border last:border-0 hover:bg-color-bg-2 transition-colors duration-500 group"
                       >
@@ -331,7 +331,7 @@ export function WorkshopsHub() {
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.08 }}
+              viewport={{ once: true, amount: 0.08 }}
               transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-6 text-left items-start"
             >
@@ -349,7 +349,7 @@ export function WorkshopsHub() {
                   key={stat.label} 
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   className="flex flex-col items-center text-center gap-4 group"
                 >
@@ -395,7 +395,7 @@ export function WorkshopsHub() {
                   Simple Process. <span className="text-color-accent">Fast Turnaround.</span>
                 </h2>
                 <p className="type-p1 text-color-text-2 max-w-[540px]">
-                  From your first message to a fully delivered workshop — in as little as 14 days.
+                  From your first message to a fully delivered workshop â€” in as little as 14 days.
                 </p>
               </div>
               <div className="flex-shrink-0">
@@ -413,7 +413,7 @@ export function WorkshopsHub() {
                   key={i}
                   initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08 }}
                   transition={{ duration: 0.7, delay: i * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
                   className="flex gap-8 relative"
                 >
@@ -455,7 +455,7 @@ export function WorkshopsHub() {
       <ToolsSection audience="general" />
 
       <FAQ
-        eyebrow="AI Workshops — FAQs"
+        eyebrow="AI Workshops â€” FAQs"
         title="Common Questions About Our Programs"
         description="Everything you need to know about booking, delivery, and outcomes across all Unithink AI workshop tracks."
         items={workshopHubFAQs}

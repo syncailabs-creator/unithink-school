@@ -23,9 +23,9 @@ const corporateActivity = [
 ];
 
 const corporateVideoTestimonials = [
-  { src: '/content/fac1.MP4', name: 'Rohan Mehta', role: 'Operations Head', org: 'Metizsoft Solutions' },
-  { src: '/content/fac2.MP4', name: 'Priya Kapoor', role: 'L&D Manager', org: 'Parul University' },
-  { src: '/content/fac3.MP4', name: 'Vivek Shah', role: 'CTO', org: 'TechVentures Pvt. Ltd.' },
+  { src: '/content/fac1.mp4', name: 'Rohan Mehta', role: 'Operations Head', org: 'Metizsoft Solutions' },
+  { src: '/content/fac2.mp4', name: 'Priya Kapoor', role: 'L&D Manager', org: 'Parul University' },
+  { src: '/content/fac3.mp4', name: 'Vivek Shah', role: 'CTO', org: 'TechVentures Pvt. Ltd.' },
 ];
 
 const corporateTextTestimonials = [

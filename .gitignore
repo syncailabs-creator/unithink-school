@@ -7,10 +7,11 @@ coverage/
 .env*
 !.env.example
 
-# Large media files - host these on a CDN (YouTube, Vimeo, Cloudinary, etc.)
-*.mp4
-*.MP4
+# Large media files
 *.mov
 *.MOV
 *.avi
 *.mkv
+# Videos over GitHub's 100MB limit — host on CDN
+public/content/ws_video2.mp4
+public/content/ws_video4.mp4

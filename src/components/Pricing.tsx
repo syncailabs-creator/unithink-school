@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Check, Star, ArrowRight } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 import { DotGrid } from './DotGrid';
@@ -6,7 +6,7 @@ import { DotGrid } from './DotGrid';
 const plans = [
   {
     title: 'One-Day Workshop',
-    price: '₹1,500',
+    price: 'â‚¹1,500',
     label: 'AWARENESS',
     perfectFor: 'AI awareness, pilot programs, leadership briefings, large department introductions',
     features: [
@@ -23,7 +23,7 @@ const plans = [
   },
   {
     title: 'Two-Day Intensive',
-    price: '₹2,000',
+    price: 'â‚¹2,000',
     label: 'MOST POPULAR',
     perfectFor: 'Department transformation, pre-placement student batches, AICTE FDP programs, company-wide AI rollouts',
     features: [
@@ -71,7 +71,7 @@ export function Pricing() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -92,7 +92,7 @@ export function Pricing() {
                 key={plan.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08 }}
                 transition={{ duration: 0.8, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                 className={cn(
                   "bg-color-bg rounded-[1.5rem] lg:rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col gap-4 lg:gap-5 relative transition-all duration-700 hover:border-color-accent/40 shadow-soft border border-color-border",

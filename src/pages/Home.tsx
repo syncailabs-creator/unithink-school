@@ -17,8 +17,8 @@ import { ShieldCheck } from 'lucide-react';
 
 const homeVideoTestimonials = [
   { src: '/content/student-reviews.mp4', name: 'Final-Year CSE Student', role: 'Student', org: 'Saffrony University' },
-  { src: '/content/fac2.MP4', name: 'Operations Head', role: 'Corporate', org: 'Metizsoft Software Solutions' },
-  { src: '/content/fac3.MP4', name: 'Assistant Professor, CS', role: 'Faculty', org: 'Techno NJR University' },
+  { src: '/content/fac2.mp4', name: 'Operations Head', role: 'Corporate', org: 'Metizsoft Software Solutions' },
+  { src: '/content/fac3.mp4', name: 'Assistant Professor, CS', role: 'Faculty', org: 'Techno NJR University' },
 ];
 
 const homeTextTestimonials = [

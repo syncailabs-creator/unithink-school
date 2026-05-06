@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Phone, Mail, MessageCircle, Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { DotGrid } from './DotGrid';
@@ -46,7 +46,7 @@ export function Contact() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             access_key: key,
-            subject: `New Inquiry — ${form.interest} | Unithink School`,
+            subject: `New Inquiry â€” ${form.interest} | Unithink School`,
             from_name: form.name,
             reply_to: form.email,
             interest: form.interest,
@@ -69,7 +69,7 @@ export function Contact() {
         setStatus('error');
       }
     } else {
-      // No API key configured — submission cannot complete, direct to WhatsApp
+      // No API key configured â€” submission cannot complete, direct to WhatsApp
       setStatus('error');
     }
   }
@@ -87,11 +87,11 @@ export function Contact() {
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          {/* ── Left — Contact Info ─────────────────────────────────── */}
+          {/* â”€â”€ Left â€” Contact Info â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-10"
           >
@@ -103,7 +103,7 @@ export function Contact() {
                 Start Your <span className="text-color-accent">AI Journey</span> Today
               </h2>
               <p className="type-p1 text-color-text-2 max-w-[640px]">
-                Share your requirements — we'll recommend the right program, structure, and timeline for your team or organisation.
+                Share your requirements â€” we'll recommend the right program, structure, and timeline for your team or organisation.
               </p>
             </div>
 
@@ -167,11 +167,11 @@ export function Contact() {
             </div>
           </motion.div>
 
-          {/* ── Right — Form ────────────────────────────────────────── */}
+          {/* â”€â”€ Right â€” Form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="bg-color-bg rounded-[3rem] p-8 md:p-12 shadow-soft border border-color-border relative overflow-hidden"
           >
@@ -180,7 +180,7 @@ export function Contact() {
 
             <AnimatePresence mode="wait">
 
-              {/* ── Success State ───────────────────────────────── */}
+              {/* â”€â”€ Success State â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
               {status === 'success' && (
                 <motion.div
                   key="success"
@@ -220,7 +220,7 @@ export function Contact() {
                 </motion.div>
               )}
 
-              {/* ── Error State ─────────────────────────────────── */}
+              {/* â”€â”€ Error State â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
               {status === 'error' && (
                 <motion.div
                   key="error"
@@ -256,7 +256,7 @@ export function Contact() {
                 </motion.div>
               )}
 
-              {/* ── Form ────────────────────────────────────────── */}
+              {/* â”€â”€ Form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
               {(status === 'idle' || status === 'loading') && (
                 <motion.form
                   key="form"

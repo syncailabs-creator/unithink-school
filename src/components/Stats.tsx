@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Users, Building2, Star, Zap } from 'lucide-react';
 import { StatItem } from '../types';
 import { DotGrid } from './DotGrid';
@@ -32,7 +32,7 @@ export function Stats({ items = defaultStats, heading, subheading, compact = fal
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.6 }}
             className="flex flex-col gap-4 text-left items-start mb-6 md:mb-8 lg:mb-10"
           >
@@ -54,7 +54,7 @@ export function Stats({ items = defaultStats, heading, subheading, compact = fal
               key={stat.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.08 }}
+              viewport={{ once: true, amount: 0.08 }}
               transition={{ duration: 0.7, delay: index * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col items-center text-center gap-4 group sm:border-r last:border-r-0 border-color-border px-4 sm:px-6"
             >

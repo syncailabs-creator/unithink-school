@@ -23,9 +23,9 @@ const studentActivity = [
 ];
 
 const studentVideoTestimonials = [
-  { src: '/content/fac1.MP4', name: 'Aryan Patel', role: 'Final-Year CSE Student', org: 'Parul University' },
-  { src: '/content/fac2.MP4', name: 'Sneha Joshi', role: 'Pre-Placement Batch', org: 'Vishwakarma University' },
-  { src: '/content/fac3.MP4', name: 'Rahul Desai', role: 'Technical Club Lead', org: 'Techno NJR University' },
+  { src: '/content/fac1.mp4', name: 'Aryan Patel', role: 'Final-Year CSE Student', org: 'Parul University' },
+  { src: '/content/fac2.mp4', name: 'Sneha Joshi', role: 'Pre-Placement Batch', org: 'Vishwakarma University' },
+  { src: '/content/fac3.mp4', name: 'Rahul Desai', role: 'Technical Club Lead', org: 'Techno NJR University' },
 ];
 
 const studentTextTestimonials = [

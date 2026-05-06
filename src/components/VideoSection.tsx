@@ -20,25 +20,25 @@ const workshopVideos: VideoItem[] = [
     description: 'Highlights from our sessions. The live builds, the demos, and the moment something actually works.',
   },
   {
-    src:         '/content/ws_video2.mp4',
+    src:         '/content/ws_video3.mp4',
     label:       'Corporate Training',
     tag:         'Corporate',
     description: 'Teams moving from AI awareness to production-ready automation.',
   },
   {
-    src:         '/content/ws_video3.mp4',
+    src:         '/content/ws_video5.mp4',
     label:       'Faculty FDP Program',
     tag:         'Faculty FDP',
     description: 'Faculty mastering AI tools for teaching and research.',
   },
   {
-    src:         '/content/ws_video4.mp4',
+    src:         '/content/fac2.mp4',
     label:       'Student Development Program',
     tag:         'Student SDP',
     description: 'Students building and deploying AI agents in real time.',
   },
   {
-    src:         '/content/ws_video5.mp4',
+    src:         '/content/fac3.mp4',
     label:       'Pre AI Summit India 2025 at GTU',
     tag:         'AI Summit',
     description: 'Live showcase at GTU — teams demoing AI products built during the summit.',
@@ -96,7 +96,7 @@ function VideoCard({ video, index, aspectRatio = '9/16', size = 'portrait', onUn
     <motion.div
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.08 }}
       transition={{ duration: 0.55, delay: index * 0.07, ease: [0.215, 0.61, 0.355, 1] }}
       className="group bg-color-bg rounded-2xl border border-color-border overflow-hidden shadow-soft hover:border-color-accent/40 hover:shadow-xl hover:shadow-color-accent/8 transition-all duration-500 flex flex-col"
     >
@@ -223,7 +223,7 @@ export function VideoSection({ compact = false }: VideoSectionProps) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08 }}
             transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-4 max-w-[640px]"
           >

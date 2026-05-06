@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0A"/>
+      <stop offset="100%" style="stop-color:#111111"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow blob top-right -->
+  <ellipse cx="1050" cy="150" rx="300" ry="220" fill="#F59E0B" opacity="0.06" filter="url(#glow)"/>
+  <!-- Glow blob bottom-left -->
+  <ellipse cx="150" cy="520" rx="250" ry="180" fill="#F59E0B" opacity="0.04" filter="url(#glow)"/>
+
+  <!-- Accent bar left -->
+  <rect x="80" y="180" width="4" height="260" fill="url(#accent)" rx="2"/>
+
+  <!-- Eyebrow label -->
+  <text x="104" y="212" font-family="Montserrat, system-ui, sans-serif" font-size="14" font-weight="600" fill="#F59E0B" letter-spacing="3" text-transform="uppercase">HANDS-ON AI TRAINING · INDIA</text>
+
+  <!-- Main headline -->
+  <text x="100" y="300" font-family="Montserrat, system-ui, sans-serif" font-size="64" font-weight="700" fill="#FAFAFA" letter-spacing="-1.5">Build Real AI.</text>
+  <text x="100" y="378" font-family="Montserrat, system-ui, sans-serif" font-size="64" font-weight="700" fill="#FAFAFA" letter-spacing="-1.5">From <tspan fill="#F59E0B">Day 1.</tspan></text>
+
+  <!-- Description -->
+  <text x="100" y="440" font-family="Montserrat, system-ui, sans-serif" font-size="20" font-weight="400" fill="#A1A1AA" letter-spacing="-0.3">Workshops for Corporates · Students · Faculty</text>
+
+  <!-- Stats row -->
+  <g transform="translate(100, 500)">
+    <text font-family="Montserrat, system-ui, sans-serif" font-size="28" font-weight="700" fill="#F59E0B" letter-spacing="-0.5">1,800+</text>
+    <text y="24" font-family="Montserrat, system-ui, sans-serif" font-size="12" font-weight="500" fill="#71717A" letter-spacing="1">TRAINED</text>
+  </g>
+  <g transform="translate(300, 500)">
+    <text font-family="Montserrat, system-ui, sans-serif" font-size="28" font-weight="700" fill="#F59E0B" letter-spacing="-0.5">60+</text>
+    <text y="24" font-family="Montserrat, system-ui, sans-serif" font-size="12" font-weight="500" fill="#71717A" letter-spacing="1">WORKSHOPS</text>
+  </g>
+  <g transform="translate(470, 500)">
+    <text font-family="Montserrat, system-ui, sans-serif" font-size="28" font-weight="700" fill="#F59E0B" letter-spacing="-0.5">95%</text>
+    <text y="24" font-family="Montserrat, system-ui, sans-serif" font-size="12" font-weight="500" fill="#71717A" letter-spacing="1">SATISFACTION</text>
+  </g>
+
+  <!-- Right side brand block -->
+  <rect x="820" y="200" width="300" height="220" rx="20" fill="#171717" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="970" y="268" font-family="Montserrat, system-ui, sans-serif" font-size="18" font-weight="700" fill="#FAFAFA" text-anchor="middle">Unithink</text>
+  <text x="970" y="296" font-family="Montserrat, system-ui, sans-serif" font-size="18" font-weight="700" fill="#F59E0B" text-anchor="middle">School</text>
+  <line x1="900" y1="316" x2="1040" y2="316" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="970" y="350" font-family="Montserrat, system-ui, sans-serif" font-size="12" font-weight="500" fill="#71717A" text-anchor="middle" letter-spacing="2">AICTE ALIGNED</text>
+  <text x="970" y="372" font-family="Montserrat, system-ui, sans-serif" font-size="12" font-weight="500" fill="#71717A" text-anchor="middle" letter-spacing="2">AHMEDABAD · PAN INDIA</text>
+
+  <!-- URL -->
+  <text x="970" y="580" font-family="Montserrat, system-ui, sans-serif" font-size="14" font-weight="500" fill="#4B5563" text-anchor="middle" letter-spacing="0.5">unithinkschool.com</text>
+</svg>

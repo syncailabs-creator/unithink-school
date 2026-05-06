@@ -23,9 +23,9 @@ const facultyActivity = [
 ];
 
 const facultyVideoTestimonials = [
-  { src: '/content/fac1.MP4', name: 'Dr. Anjali Mehta', role: 'Assistant Professor, CS', org: 'Techno NJR University' },
-  { src: '/content/fac2.MP4', name: 'Prof. Rajesh Patel', role: 'HoD, Electronics', org: 'Parul University' },
-  { src: '/content/fac3.MP4', name: 'Dr. Priya Nair', role: 'Research Faculty', org: 'Gujarat Technological University' },
+  { src: '/content/fac1.mp4', name: 'Dr. Anjali Mehta', role: 'Assistant Professor, CS', org: 'Techno NJR University' },
+  { src: '/content/fac2.mp4', name: 'Prof. Rajesh Patel', role: 'HoD, Electronics', org: 'Parul University' },
+  { src: '/content/fac3.mp4', name: 'Dr. Priya Nair', role: 'Research Faculty', org: 'Gujarat Technological University' },
 ];
 
 const facultyTextTestimonials = [

@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { DotGrid } from './DotGrid';
 
 interface TrustBarProps {
@@ -37,7 +37,7 @@ export function TrustBar({
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.5 }}
           className="flex items-center justify-center gap-4 mb-12 px-6"
         >
@@ -74,7 +74,7 @@ export function TrustBar({
 function LogoItem({ logo }: { logo: { name: string; src: string; subtitle: string } }) {
   return (
     <div className="group flex-shrink-0 mx-10 flex flex-col items-center gap-3 cursor-default">
-      {/* 180×80 uniform slot — logos render at full color, no filters applied */}
+      {/* 180Ã—80 uniform slot â€” logos render at full color, no filters applied */}
       <div className="w-[180px] h-[80px] flex items-center justify-center rounded-xl overflow-hidden">
         <img
           src={logo.src}
