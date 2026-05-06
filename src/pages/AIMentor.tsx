@@ -684,7 +684,7 @@ export function AIMentor() {
             {[
               { src: '/content/ws_video3.mp4', label: 'Live Sunday AI Session' },
               { src: '/content/ws_video3.mp4', label: 'Community Q&A Highlight' },
-              { src: '/content/fac2.mp4', label: 'AI Agent Build — n8n Demo'AI Agent Build â€” n8n Demo' },
+              { src: '/content/fac2.mp4', label: 'AI Agent Build — n8n Demo' },
             ].map((v, i) => (
               <HoverVideoCard key={i} src={v.src} label={v.label} index={i} />
             ))}
