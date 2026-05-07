@@ -12,6 +12,4 @@ coverage/
 *.MOV
 *.avi
 *.mkv
-# Videos over GitHub's 100MB limit — host on CDN
-public/content/ws_video2.mp4
-public/content/ws_video4.mp4
+

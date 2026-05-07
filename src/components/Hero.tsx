@@ -211,16 +211,16 @@ export function Hero({
       </div>
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+        <div className="w-full flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-12">
 
           {/* ── Left: Content ─────────────────────────────────────────── */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-            className="flex-1 min-w-0 flex flex-col items-center lg:items-start gap-8 order-2 lg:order-1"
+            className="flex-1 min-w-0 flex flex-col items-start gap-8"
           >
-            <div className="flex flex-col gap-6 items-center lg:items-start w-full">
+            <div className="flex flex-col gap-6 items-start w-full">
               {/* Eyebrow */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -234,18 +234,18 @@ export function Hero({
                 </span>
               </motion.div>
 
-              <h1 className="type-h1 text-center lg:text-left text-color-text mb-2">
+              <h1 className="type-h1 text-left text-color-text mb-2">
                 {title}
               </h1>
 
-              <p className="type-p2 text-center lg:text-left text-color-text-2 max-w-[540px]">
+              <p className="type-p2 text-left text-color-text-2 max-w-[540px]">
                 {subheadline}
               </p>
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col gap-5 items-center lg:items-start">
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col gap-5 items-start">
+              <div className="flex flex-wrap gap-4 justify-start">
                 <a href={primaryCTA.href} className="btn-primary group text-sm px-7 py-3.5 font-semibold tracking-[0.02em]">
                   {primaryCTA.text}
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -294,7 +294,7 @@ export function Hero({
               initial={{ opacity: 0, scale: 0.95, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative w-full sm:max-w-[480px] sm:mx-auto lg:mx-0 lg:w-[480px] xl:w-[560px] shrink-0 order-1 lg:order-2"
+              className="relative w-full sm:max-w-[480px] sm:mx-auto lg:mx-0 lg:w-[480px] xl:w-[560px] shrink-0"
             >
               <div
                 className="rounded-[2.5rem] overflow-hidden border border-color-border relative"
@@ -377,7 +377,7 @@ export function Hero({
               initial={{ opacity: 0, scale: 0.93, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 lg:w-[580px] xl:w-[620px] lg:mr-3 shrink-0 pb-6 lg:pb-4 order-1 lg:order-2"
+              className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 lg:w-[580px] xl:w-[620px] lg:mr-3 shrink-0 pb-6 lg:pb-4"
             >
               {/* Main card */}
               {visualCard && (

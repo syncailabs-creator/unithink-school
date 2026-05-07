@@ -97,14 +97,14 @@ export function Navbar() {
           )}
 
           {/* ── Logo ── */}
-          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0 relative z-10">
+          <a href="/" className="flex items-center gap-2.5 group flex-shrink-0 relative z-10">
             <div className="w-8 h-8 rounded-xl bg-color-accent flex items-center justify-center shadow-sm group-hover:shadow-color-accent/30 group-hover:scale-105 transition-all duration-300">
               <Sparkles className="w-4 h-4 text-color-bg" />
             </div>
             <span className="font-heading font-black text-lg md:text-xl tracking-tight text-color-text group-hover:text-color-accent transition-colors duration-300">
               Unithink <span className="text-color-accent">School</span>
             </span>
-          </Link>
+          </a>
 
           {/* ── Desktop Nav ── */}
           <div className="hidden lg:flex items-center gap-1 relative z-10">
@@ -228,6 +228,7 @@ export function Navbar() {
               <Link
                 key={link.name}
                 to={link.href}
+                onClick={() => { if (pathname === link.href) { window.scrollTo(0, 0); window.location.reload(); } }}
                 className={cn(
                   'relative px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200',
                   pathname === link.href
@@ -306,14 +307,14 @@ export function Navbar() {
               }}
             >
               <div className="flex items-center justify-between px-6 h-[68px] border-b border-color-border flex-shrink-0">
-                <Link to="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2.5">
+                <a href="/" className="flex items-center gap-2.5">
                   <div className="w-7 h-7 rounded-lg bg-color-accent flex items-center justify-center">
                     <Sparkles className="w-3.5 h-3.5 text-color-bg" />
                   </div>
                   <span className="font-heading font-black text-lg text-color-text">
                     Unithink <span className="text-color-accent">School</span>
                   </span>
-                </Link>
+                </a>
                 <button
                   onClick={() => setIsMenuOpen(false)}
                   className="p-2 text-color-text hover:bg-color-bg-2 rounded-xl transition-colors"
@@ -403,7 +404,7 @@ export function Navbar() {
                     <Link
                       key={link.name}
                       to={link.href}
-                      onClick={() => setIsMenuOpen(false)}
+                      onClick={() => { setIsMenuOpen(false); if (pathname === link.href) { window.scrollTo(0, 0); window.location.reload(); } }}
                       className={cn(
                         'px-4 py-2.5 text-sm font-semibold rounded-2xl transition-all duration-200',
                         pathname === link.href

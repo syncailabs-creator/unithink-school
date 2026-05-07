@@ -20,10 +20,22 @@ const workshopVideos: VideoItem[] = [
     description: 'Highlights from our sessions. The live builds, the demos, and the moment something actually works.',
   },
   {
+    src:         '/content/ws_video2.mp4',
+    label:       'Workshop in Action',
+    tag:         'Workshop',
+    description: 'Hands-on sessions where participants build and deploy live AI projects.',
+  },
+  {
     src:         '/content/ws_video3.mp4',
     label:       'Corporate Training',
     tag:         'Corporate',
     description: 'Teams moving from AI awareness to production-ready automation.',
+  },
+  {
+    src:         '/content/ws_video4.mp4',
+    label:       'Live Builds & Demos',
+    tag:         'Live Demo',
+    description: 'Watch participants go from concept to working AI system in real time.',
   },
   {
     src:         '/content/ws_video5.mp4',
