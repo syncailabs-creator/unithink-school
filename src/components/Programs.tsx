@@ -20,7 +20,7 @@ const programs = [
       'Custom industry-specific curriculum',
       '40% efficiency improvement (avg)',
       'On-site / Online / Hybrid',
-      '10â€“15 hours saved weekly per employee',
+      '10–15 hours saved weekly per employee',
     ],
     cta: 'Explore Corporate Programs',
   },

@@ -127,7 +127,7 @@ export function FormatSection({ eyebrow, title, description, note, formats, broc
                   </div>
                   {active.isPopular && (
                     <div className="inline-flex items-center self-start px-5 py-2 rounded-full bg-color-accent/10 border border-color-accent/30 text-color-accent text-[10px] font-medium uppercase tracking-[0.06em]">
-                      â˜… Most Popular
+                      ★ Most Popular
                     </div>
                   )}
                 </div>

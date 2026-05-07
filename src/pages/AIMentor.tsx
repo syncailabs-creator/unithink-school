@@ -18,9 +18,9 @@ const plans = [
     description: 'Every Sunday · Online · Open to All · Direct Q&A with Our AI Expert',
     features: [
       'Live 90-minute AI session every Sunday',
-      'Ask your questions directly to the expert â€” no pre-screening, no filters',
+      'Ask your questions directly to the expert — no pre-screening, no filters',
       'Topic rotates weekly: automation, agents, GenAI tools, AI career guidance',
-      'Hands-on mini project each session â€” you build something every week',
+      'Hands-on mini project each session — you build something every week',
       'Attendance certificate for consistent participants (4+ sessions)',
     ],
     cta: "Join Free Sunday Workshop",
@@ -39,7 +39,7 @@ const plans = [
       'Daily AI tool drops, workflow templates, and ready-to-use prompt packs',
       'Weekly exclusive resources: frameworks, use-case libraries, case studies',
       'Direct access to Unithink trainers for questions and implementation guidance',
-      'AI job and opportunity board â€” curated for India market',
+      'AI job and opportunity board — curated for India market',
       'Monthly live Q&A session with the full Unithink expert panel',
       'All recordings from Sunday live sessions archived in the group',
     ],
@@ -60,8 +60,8 @@ const plans = [
       'Custom PDF roadmap with milestones, weekly learning targets, project checkpoints',
       'Tool and platform recommendations specific to your role, industry, and career goal',
       'Curated resource list: exact courses, GitHub repos, papers, and communities',
-      '30-day check-in follow-up call â€” we review your progress and answer blockers',
-      'Community access included â€” ₹299 value, at no extra charge',
+      '30-day check-in follow-up call — we review your progress and answer blockers',
+      'Community access included — ₹299 value, at no extra charge',
     ],
     cta: "Get My Roadmap for ₹999",
     whatsappMsg: "Hi I want the personalised AI roadmap for 999",
@@ -81,7 +81,7 @@ const comparison = [
   { feature: 'Personalised Resource List', free: false, community: false, roadmap: true },
 ];
 
-// Testimonials â€” add photo path once images are available; leave empty for initials fallback
+// Testimonials — add photo path once images are available; leave empty for initials fallback
 const testimonials = [
   {
     quote: "The Sunday live sessions are the best 90 minutes I spend all week. I've built more AI tools in the last 2 months than in the last 2 years of watching tutorials.",
@@ -156,11 +156,11 @@ const faqs = [
   },
   {
     q: "How long does the ₹999 roadmap process take?",
-    a: "After purchase, we schedule your 45-minute 1:1 call within 3â€“5 business days. Your custom PDF roadmap is delivered within 48 hours of the call. The 30-day follow-up call is scheduled at the time of your first call. Total engagement: under 2 hours of your time, spread across 30 days."
+    a: "After purchase, we schedule your 45-minute 1:1 call within 3–5 business days. Your custom PDF roadmap is delivered within 48 hours of the call. The 30-day follow-up call is scheduled at the time of your first call. Total engagement: under 2 hours of your time, spread across 30 days."
   },
   {
     q: "Can I upgrade from the free plan to ₹299 or ₹999?",
-    a: "Yes. There is no barrier to upgrading. If you are on the free Sunday sessions and want community access, simply pay for the ₹299 plan. If you want the 1:1 roadmap, pay ₹999 â€” the community access is included at no extra charge."
+    a: "Yes. There is no barrier to upgrading. If you are on the free Sunday sessions and want community access, simply pay for the ₹299 plan. If you want the 1:1 roadmap, pay ₹999 — the community access is included at no extra charge."
   },
   {
     q: "Is the AI Mentor right for beginners?",
@@ -168,11 +168,11 @@ const faqs = [
   },
   {
     q: "Can this lead into a full workshop later?",
-    a: "Many AI Mentor participants convert to workshop participants after experiencing the quality of Unithink's guidance. The roadmap process often identifies whether a full workshop is the logical next step for your goals. There is no obligation â€” but many people find it becomes the obvious next move."
+    a: "Many AI Mentor participants convert to workshop participants after experiencing the quality of Unithink's guidance. The roadmap process often identifies whether a full workshop is the logical next step for your goals. There is no obligation — but many people find it becomes the obvious next move."
   },
   {
     q: "What AI tools are covered in the Sunday sessions?",
-    a: "Topics rotate weekly and cover tools like ChatGPT, Claude, Gemini, n8n automation, LangChain agents, Perplexity, Notion AI, Midjourney, Runway, and emerging tools relevant to the India market. Each session focuses on one theme with a live build component â€” not just a demo."
+    a: "Topics rotate weekly and cover tools like ChatGPT, Claude, Gemini, n8n automation, LangChain agents, Perplexity, Notion AI, Midjourney, Runway, and emerging tools relevant to the India market. Each session focuses on one theme with a live build component — not just a demo."
   },
   {
     q: "How is the ₹999 roadmap different from just Googling a learning path?",
@@ -184,19 +184,19 @@ const faqs = [
   },
   {
     q: "What is the refund policy for the paid plans?",
-    a: "For the ₹299 community: if you are not satisfied within 7 days of joining, we will refund you in full â€” no questions asked. For the ₹999 roadmap: if the 1:1 call does not meet your expectations, we offer a full refund before the PDF roadmap is delivered."
+    a: "For the ₹299 community: if you are not satisfied within 7 days of joining, we will refund you in full — no questions asked. For the ₹999 roadmap: if the 1:1 call does not meet your expectations, we offer a full refund before the PDF roadmap is delivered."
   },
 ];
 
 const audienceCards = [
   { icon: Target, title: "Professionals", desc: "Wanting to use AI in their current job to save time, improve outputs, and stay ahead of colleagues who haven't started yet." },
-  { icon: Users, title: "Freelancers", desc: "Wanting to offer AI-powered services to clients â€” but need a structured approach to what to learn and how to position it." },
-  { icon: MessageSquare, title: "Career Changers", desc: "Targeting AI-adjacent roles and need a clear, personalised learning roadmap to close the skill gap in 60â€“90 days." },
+  { icon: Users, title: "Freelancers", desc: "Wanting to offer AI-powered services to clients — but need a structured approach to what to learn and how to position it." },
+  { icon: MessageSquare, title: "Career Changers", desc: "Targeting AI-adjacent roles and need a clear, personalised learning roadmap to close the skill gap in 60–90 days." },
   { icon: BookOpen, title: "Students", desc: "Curious about AI but not yet ready to commit to a full 2-day workshop. The Sunday sessions are the perfect starting point." },
 ];
 
 // â”€â”€â”€ HoverVideoCard â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// Autoplay muted on mount; hover â†’ unmute; mouse leave â†’ mute
+// Autoplay muted on mount; hover → unmute; mouse leave → mute
 
 interface HoverVideoCardProps {
   src: string;
@@ -245,7 +245,7 @@ function HoverVideoCard({ src, label, index }: HoverVideoCardProps) {
           className="w-full h-full object-cover"
         />
 
-        {/* Sound state indicator â€” bottom left corner */}
+        {/* Sound state indicator — bottom left corner */}
         <div
           className={cn(
             "absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-medium uppercase tracking-[0.06em] transition-all duration-300",
@@ -387,7 +387,7 @@ export function AIMentor() {
       <Hero
         eyebrow="AI Mentor"
         title={<>Your Personal AI <span className="text-color-accent">Growth Partner.</span></>}
-        subheadline="Not ready for a full workshop? Start your AI journey with direct expert guidance â€” at your pace, around your goals, at a price that removes every barrier."
+        subheadline="Not ready for a full workshop? Start your AI journey with direct expert guidance — at your pace, around your goals, at a price that removes every barrier."
         primaryCTA={{ text: "Join Free Sunday Session", href: "https://wa.me/919726217070?text=Hi%20I%20want%20to%20join%20the%20free%20Sunday%20AI%20workshop" }}
         secondaryCTA={{ text: "Get Personalised Roadmap", href: "/contact" }}
         trustLine="500+ Active Community Members · Live Every Sunday 10 AM IST · Expert-Led · No Pre-Recorded Content"
@@ -456,7 +456,7 @@ export function AIMentor() {
               <span className="text-color-text-2 font-extrabold">Scale When You're Ready.</span>
             </h2>
             <p className="type-p1 text-color-text-2 max-w-[640px]">
-              Every plan moves you from where you are to where you want to be. No pressure to upgrade â€” the value speaks for itself.
+              Every plan moves you from where you are to where you want to be. No pressure to upgrade — the value speaks for itself.
             </p>
           </motion.div>
 
@@ -544,7 +544,7 @@ export function AIMentor() {
               Plan <span className="text-color-accent">Comparison</span>
             </h2>
             <p className="type-p1 text-color-text-2 max-w-[640px]">
-              See exactly what's included in each tier â€” pick the one that matches where you are right now.
+              See exactly what's included in each tier — pick the one that matches where you are right now.
             </p>
           </motion.div>
 
@@ -598,17 +598,17 @@ export function AIMentor() {
                       <td className="px-6 py-5 text-center">
                         {row.free
                           ? <div className="w-6 h-6 rounded-full bg-color-accent/15 flex items-center justify-center mx-auto"><Check className="w-3.5 h-3.5 text-color-accent" /></div>
-                          : <span className="text-color-text-muted/30 text-lg font-light">â€”</span>}
+                          : <span className="text-color-text-muted/30 text-lg font-light">—</span>}
                       </td>
                       <td className="px-6 py-5 text-center" style={{ background: 'rgba(251,176,59,0.03)' }}>
                         {row.community
                           ? <div className="w-6 h-6 rounded-full flex items-center justify-center mx-auto" style={{ background: 'rgba(251,176,59,0.2)' }}><Check className="w-3.5 h-3.5 text-color-accent" /></div>
-                          : <span className="text-color-text-muted/30 text-lg font-light">â€”</span>}
+                          : <span className="text-color-text-muted/30 text-lg font-light">—</span>}
                       </td>
                       <td className="px-6 py-5 text-center">
                         {row.roadmap
                           ? <div className="w-6 h-6 rounded-full bg-color-accent/15 flex items-center justify-center mx-auto"><Check className="w-3.5 h-3.5 text-color-accent" /></div>
-                          : <span className="text-color-text-muted/30 text-lg font-light">â€”</span>}
+                          : <span className="text-color-text-muted/30 text-lg font-light">—</span>}
                       </td>
                     </motion.tr>
                   ))}
@@ -642,14 +642,14 @@ export function AIMentor() {
           </motion.div>
         </div>
 
-        {/* Row 1 â€” scrolls left */}
+        {/* Row 1 — scrolls left */}
         <div className="overflow-hidden mb-5 relative z-10">
           <div className="flex gap-5 animate-marquee">
             {row1.map((t, i) => <TestimonialCard key={i} t={t} />)}
           </div>
         </div>
 
-        {/* Row 2 â€” scrolls right */}
+        {/* Row 2 — scrolls right */}
         <div className="overflow-hidden relative z-10">
           <div className="flex gap-5 animate-marquee-reverse">
             {row2.map((t, i) => <TestimonialCard key={i} t={t} />)}
@@ -712,7 +712,7 @@ export function AIMentor() {
               Frequently Asked <span className="text-color-accent">Questions</span>
             </h2>
             <p className="type-p1 text-color-text-2 max-w-[640px]">
-              Everything about the AI Mentor program â€” answered clearly and honestly.
+              Everything about the AI Mentor program — answered clearly and honestly.
             </p>
           </motion.div>
 

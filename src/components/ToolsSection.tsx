@@ -34,7 +34,7 @@ const audienceContent = {
   corporate: {
     eyebrow: 'Tools We Teach',
     title: 'Industry-Standard AI Platforms. Real Access. Real Builds.',
-    description: 'Every tool below is taught live during your workshop â€” not in demos, but in actual workflow builds. Participants get hands-on experience with the same platforms leading companies are using right now.',
+    description: 'Every tool below is taught live during your workshop — not in demos, but in actual workflow builds. Participants get hands-on experience with the same platforms leading companies are using right now.',
   },
   students: {
     eyebrow: 'Tools You Will Master',
@@ -44,7 +44,7 @@ const audienceContent = {
   faculty: {
     eyebrow: 'Tools We Teach',
     title: 'AI Tools That Transform How You Teach, Research, and Administer.',
-    description: 'Selected specifically for academic workflows â€” from lecture preparation to research acceleration to NAAC documentation. Every tool has a direct application in your daily work.',
+    description: 'Selected specifically for academic workflows — from lecture preparation to research acceleration to NAAC documentation. Every tool has a direct application in your daily work.',
   },
   general: {
     eyebrow: 'Tools We Teach',

@@ -193,7 +193,7 @@ export function ParticipantTestimonials({
             </p>
           </motion.div>
 
-          {/* Video testimonials â€” 3-col grid */}
+          {/* Video testimonials — 3-col grid */}
           {videos.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
               {videos.map((video, i) => (
@@ -202,7 +202,7 @@ export function ParticipantTestimonials({
             </div>
           )}
 
-          {/* Text testimonials â€” matches home page card style exactly */}
+          {/* Text testimonials — matches home page card style exactly */}
           {textTestimonials.length > 0 && (
             <div className="grid md:grid-cols-3 gap-6">
               {textTestimonials.map((t, i) => (
