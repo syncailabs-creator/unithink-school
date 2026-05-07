@@ -328,13 +328,13 @@ export function About() {
               initial={{ opacity: 0, scale: 0.94, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative hidden lg:block"
+              className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 pt-8 lg:pt-6 pb-8 lg:pb-6"
             >
               {/* Floating badge */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-5 -right-4 z-20 flex items-center gap-2 px-4 py-2 rounded-2xl shadow-soft border border-color-border bg-color-bg"
+                className="absolute -top-5 -right-4 z-20 hidden lg:flex items-center gap-2 px-4 py-2 rounded-2xl shadow-soft border border-color-border bg-color-bg"
               >
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                 <span className="text-[10px] font-medium uppercase tracking-[0.06em] text-color-text">Active & Growing</span>
@@ -379,7 +379,7 @@ export function About() {
               <motion.div
                 animate={{ y: [0, 8, 0], rotate: [0, -1, 0] }}
                 transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className="absolute -bottom-5 -left-8 z-20 px-5 py-3.5 rounded-[1.5rem]"
+                className="absolute -bottom-5 -left-8 z-20 hidden lg:flex px-5 py-3.5 rounded-[1.5rem]"
                 style={{
                   background: 'rgba(10,10,10,0.90)',
                   boxShadow: '0 0 0 1px rgba(251,176,59,0.2), 0 16px 40px rgba(0,0,0,0.4)',
