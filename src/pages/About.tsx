@@ -410,8 +410,8 @@ export function About() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
-            transition={{ duration: 0.7 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4 }}
             className="text-left mb-8 md:mb-14 lg:mb-20"
           >
             <span className="type-h6 text-color-accent block mb-6">Our Philosophy</span>
@@ -428,10 +428,10 @@ export function About() {
             {coreValues.map((val, i) => (
               <motion.div
                 key={val.title}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.08 }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
+                viewport={{ once: true, amount: 0.12 }}
+                transition={{ duration: 0.35, delay: i * 0.1 }}
                 className="bg-color-bg rounded-[2.5rem] p-8 md:p-10 border border-color-border shadow-soft group hover:border-color-accent/30 transition-all duration-500 flex gap-6"
               >
                 <div className="flex-shrink-0">
@@ -467,8 +467,8 @@ export function About() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
-            transition={{ duration: 0.7 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4 }}
             className="max-w-[700px] mb-8 md:mb-14 lg:mb-20"
           >
             <span className="type-h6 text-color-accent block mb-6">Our Story</span>
@@ -491,10 +491,10 @@ export function About() {
                 return (
                   <motion.div
                     key={m.title}
-                    initial={{ opacity: 0, x: isRight ? -24 : 24 }}
+                    initial={{ opacity: 0, x: isRight ? -8 : 8 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: false, amount: 0.08 }}
-                    transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+                    viewport={{ once: true, amount: 0.12 }}
+                    transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
                     className={cn(
                       'relative flex items-start gap-6 md:gap-0',
                       'md:grid md:grid-cols-2',
@@ -561,10 +561,10 @@ export function About() {
 
             {/* Header */}
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.08 }}
-              transition={{ duration: 0.7 }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.4 }}
               className="flex flex-col gap-6 text-left items-start"
             >
               <span className="type-h6 text-color-accent">Expert Selection Process</span>
@@ -581,10 +581,10 @@ export function About() {
               {expertSelectionSteps.map((step, i) => (
                 <motion.div
                   key={step.step}
-                  initial={{ opacity: 0, y: 28 }}
+                  initial={{ opacity: 0, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.08 }}
-                  transition={{ duration: 0.55, delay: i * 0.08, ease: [0.215, 0.61, 0.355, 1] }}
+                  viewport={{ once: true, amount: 0.12 }}
+                  transition={{ duration: 0.4, delay: i * 0.08, ease: [0.215, 0.61, 0.355, 1] }}
                   className="bg-color-bg rounded-[2rem] p-7 border border-color-border shadow-soft group hover:border-color-accent/30 hover:shadow-xl hover:shadow-color-accent/5 transition-all duration-500 flex flex-col gap-5"
                 >
                   {/* Step number + icon row */}
@@ -617,10 +617,10 @@ export function About() {
 
             {/* Bottom callout */}
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.08 }}
-              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.35 }}
               className="rounded-[2.5rem] p-8 md:p-12 border border-color-accent/20 flex flex-col md:flex-row items-center justify-between gap-8"
               style={{ background: 'linear-gradient(135deg, rgba(251,176,59,0.06) 0%, transparent 60%)' }}
             >
@@ -666,10 +666,10 @@ export function About() {
 
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.08 }}
-            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4 }}
             className="flex flex-col gap-8 items-start"
           >
             <span className="type-h6 text-color-accent">Let's Build Something</span>

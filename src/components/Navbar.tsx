@@ -330,14 +330,14 @@ export function Navbar() {
                   <button
                     onClick={() => setIsMobileWorkshopsOpen(prev => !prev)}
                     className={cn(
-                      'flex items-center justify-between w-full px-4 py-3.5 rounded-2xl transition-all duration-200',
+                      'flex items-center justify-between w-full px-4 py-3 rounded-2xl transition-all duration-200',
                       workshopActive
                         ? 'bg-color-accent/10 border border-color-accent/20'
                         : 'hover:bg-color-bg-2'
                     )}
                   >
                     <span className={cn(
-                      'text-base font-heading font-bold',
+                      'text-sm font-semibold',
                       workshopActive ? 'text-color-accent' : 'text-color-text'
                     )}>
                       Workshops
@@ -374,12 +374,12 @@ export function Navbar() {
                               )}
                             >
                               <span className={cn(
-                                'text-sm font-heading font-bold',
+                                'text-sm font-semibold',
                                 pathname === link.href ? 'text-color-accent' : 'text-color-text'
                               )}>
                                 {link.name}
                               </span>
-                              <span className="text-xs text-color-text-muted">{link.description}</span>
+                              <span className="text-[11px] text-color-text-muted">{link.description}</span>
                             </Link>
                           ))}
                           <Link
@@ -405,7 +405,7 @@ export function Navbar() {
                       to={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className={cn(
-                        'px-4 py-3 text-lg font-heading font-bold rounded-2xl transition-all duration-200',
+                        'px-4 py-2.5 text-sm font-semibold rounded-2xl transition-all duration-200',
                         pathname === link.href
                           ? 'text-color-accent bg-color-accent/10'
                           : 'text-color-text hover:text-color-accent hover:bg-color-bg-2'

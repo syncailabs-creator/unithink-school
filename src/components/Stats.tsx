@@ -30,10 +30,10 @@ export function Stats({ items = defaultStats, heading, subheading, compact = fal
       <div className="max-w-7xl mx-auto w-full relative z-10">
         {(heading || subheading) && (
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.35 }}
             className="flex flex-col gap-4 text-left items-start mb-6 md:mb-8 lg:mb-10"
           >
             {heading && (
@@ -52,10 +52,10 @@ export function Stats({ items = defaultStats, heading, subheading, compact = fal
           {items.map((stat, index) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.08 }}
-              transition={{ duration: 0.7, delay: index * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.4, delay: index * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col items-center text-center gap-4 group sm:border-r last:border-r-0 border-color-border px-4 sm:px-6"
             >
               {stat.icon && (

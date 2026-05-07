@@ -154,10 +154,10 @@ export function WorkshopGallery({
       <div className="max-w-7xl mx-auto w-full relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.08 }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.12 }}
+          transition={{ duration: 0.35 }}
           className="text-left mb-12"
         >
           <span className="type-h6 text-color-accent block mb-5">{eyebrow}</span>
@@ -174,10 +174,10 @@ export function WorkshopGallery({
           {images.map((img, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.05 }}
-              transition={{ duration: 0.5, delay: (i % 6) * 0.07 }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.4, delay: (i % 6) * 0.07 }}
               className="group relative rounded-2xl overflow-hidden cursor-pointer border border-color-border hover:border-color-accent/40 transition-all duration-500 shadow-soft hover:shadow-xl hover:shadow-color-accent/10"
               style={{ aspectRatio: '4/3' }}
               onClick={() => setLightboxIndex(i)}
@@ -223,7 +223,7 @@ export function WorkshopGallery({
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.12 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 text-center text-sm text-color-text-muted font-medium"
         >

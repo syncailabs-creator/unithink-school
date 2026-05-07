@@ -65,10 +65,10 @@ export function AIMentor() {
 
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-4 text-left items-start"
           >
             <span className="type-h6 text-color-accent">
@@ -87,10 +87,10 @@ export function AIMentor() {
             {mentorPlans.map((plan, index) => (
               <motion.div
                 key={plan.title}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
-                transition={{ duration: 0.5, delay: index * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
+                viewport={{ once: true, amount: 0.12 }}
+                transition={{ duration: 0.4, delay: index * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
                 className="bg-color-bg rounded-[2.5rem] p-10 flex flex-col gap-8 group hover:border-color-accent/30 transition-all duration-500 relative overflow-hidden border border-color-border shadow-soft"
               >
                 {/* Hover glow */}

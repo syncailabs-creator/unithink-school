@@ -65,7 +65,7 @@ export function Hero({
   const displayMetrics = metrics ?? infographicMetrics;
   const displayActivity = activityItems ?? activityFeed;
   return (
-    <section className="relative min-h-[100svh] md:min-h-screen pt-[72px] md:pt-[100px] pb-12 md:pb-20 overflow-hidden flex items-center bg-color-bg px-3 md:px-5">
+    <section className="relative min-h-[100svh] md:min-h-screen pt-[88px] sm:pt-[96px] md:pt-[112px] pb-12 md:pb-20 overflow-hidden flex items-center bg-color-bg px-3 md:px-5">
 
       {/* ── Aurora gradient background ─────────────────────────────── */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none overflow-hidden">

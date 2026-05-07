@@ -225,10 +225,10 @@ function HoverVideoCard({ src, label, index }: HoverVideoCardProps) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 8 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.08 }}
-      transition={{ duration: 0.6, delay: index * 0.12 }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.35, delay: index * 0.12 }}
       className="group relative rounded-[2rem] overflow-hidden border border-color-border bg-color-bg shadow-soft hover:border-color-accent/40 hover:shadow-xl hover:shadow-color-accent/8 transition-all duration-500 cursor-pointer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -420,10 +420,10 @@ export function AIMentor() {
               {audienceCards.map((item, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.08 }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  viewport={{ once: true, amount: 0.12 }}
+                  transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="bg-color-bg p-7 rounded-[2.5rem] border border-color-border shadow-soft hover:border-color-accent/20 transition-all duration-500 group"
                 >
                   <div className="w-12 h-12 rounded-2xl bg-color-accent-bg flex items-center justify-center text-color-accent mb-5 group-hover:scale-110 group-hover:bg-color-accent group-hover:text-color-bg transition-all duration-500">
@@ -445,9 +445,9 @@ export function AIMentor() {
         <DotGrid />
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.12 }}
             className="flex flex-col gap-6 text-left items-start mb-8 md:mb-14 lg:mb-20"
           >
             <span className="type-h6 text-color-accent">Choose Your Starting Point</span>
@@ -464,10 +464,10 @@ export function AIMentor() {
             {plans.map((plan, i) => (
               <motion.div
                 key={plan.id}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
-                transition={{ duration: 0.7, delay: i * 0.15 }}
+                viewport={{ once: true, amount: 0.12 }}
+                transition={{ duration: 0.4, delay: i * 0.15 }}
                 className={cn(
                   "relative flex flex-col p-10 rounded-[3rem] border transition-all duration-500",
                   plan.highlight
@@ -533,10 +533,10 @@ export function AIMentor() {
           style={{ background: 'radial-gradient(circle, rgba(251,176,59,0.05) 0%, transparent 70%)' }} />
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
             <span className="type-h6 text-color-accent">Side by Side</span>
@@ -549,10 +549,10 @@ export function AIMentor() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="rounded-[3rem] border border-color-border overflow-hidden shadow-soft bg-color-bg"
           >
             <div className="h-[2px]"
@@ -588,7 +588,7 @@ export function AIMentor() {
                       key={i}
                       initial={{ opacity: 0, x: -12 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true, amount: 0.08 }}
+                      viewport={{ once: true, amount: 0.12 }}
                       transition={{ duration: 0.5, delay: i * 0.05 }}
                       className="border-b border-color-border last:border-0 hover:bg-color-bg-2 group transition-all duration-300"
                     >
@@ -626,10 +626,10 @@ export function AIMentor() {
         {/* Section header */}
         <div className="max-w-7xl mx-auto w-full relative z-10 mb-6 md:mb-10 lg:mb-16">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.7 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4 }}
             className="flex flex-col gap-6 text-left items-start"
           >
             <span className="type-h6 text-color-accent">Community Voices</span>
@@ -664,10 +664,10 @@ export function AIMentor() {
 
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.7 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4 }}
             className="flex flex-col gap-6 text-left items-start mb-6 md:mb-10 lg:mb-14"
           >
             <span className="type-h6 text-color-accent">See It Live</span>
@@ -701,10 +701,10 @@ export function AIMentor() {
         />
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
             <span className="type-h6 text-color-accent">Got Questions?</span>
@@ -722,7 +722,7 @@ export function AIMentor() {
                 key={i}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.12 }}
                 transition={{ delay: Math.min(i * 0.05, 0.3), duration: 0.5 }}
                 className="bg-color-bg-2 rounded-[2rem] border border-color-border shadow-soft overflow-hidden transition-all duration-300 hover:border-color-accent/20"
               >

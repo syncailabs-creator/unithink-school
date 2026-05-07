@@ -94,10 +94,10 @@ function VideoCard({ video, index, aspectRatio = '9/16', size = 'portrait', onUn
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 28 }}
+      initial={{ opacity: 0, y: 8 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.08 }}
-      transition={{ duration: 0.55, delay: index * 0.07, ease: [0.215, 0.61, 0.355, 1] }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.4, delay: index * 0.07, ease: [0.215, 0.61, 0.355, 1] }}
       className="group bg-color-bg rounded-2xl border border-color-border overflow-hidden shadow-soft hover:border-color-accent/40 hover:shadow-xl hover:shadow-color-accent/8 transition-all duration-500 flex flex-col"
     >
       {/* Video wrapper — aspect ratio locked, no cropping */}
@@ -221,10 +221,10 @@ export function VideoSection({ compact = false }: VideoSectionProps) {
 
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.35, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-4 max-w-[640px]"
           >
             <span className="type-h6 text-color-accent">Workshop Recordings</span>

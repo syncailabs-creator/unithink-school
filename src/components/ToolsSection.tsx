@@ -66,10 +66,10 @@ export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
 
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.35, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
             <span className="type-h6 text-color-accent">
@@ -88,9 +88,9 @@ export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
             {tools.map((tool, index) => (
               <motion.div
                 key={tool.name}
-                initial={{ opacity: 0, y: 16, scale: 0.95 }}
+                initial={{ opacity: 0, y: 6 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.12 }}
                 transition={{ duration: 0.4, delay: index * 0.04, ease: [0.215, 0.61, 0.355, 1] }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 className="group bg-color-bg border border-color-border rounded-2xl p-3 md:p-4 flex flex-col items-center gap-2.5 hover:border-color-accent/30 hover:shadow-lg hover:shadow-color-accent/5 transition-all duration-300 cursor-default"

@@ -69,10 +69,10 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="flex flex-col gap-8 md:gap-10">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
-            transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
             <span className="type-h6 text-color-accent">
@@ -90,10 +90,10 @@ export function Pricing() {
             {plans.map((plan, index) => (
               <motion.div
                 key={plan.title}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
-                transition={{ duration: 0.8, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
+                viewport={{ once: true, amount: 0.12 }}
+                transition={{ duration: 0.4, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                 className={cn(
                   "bg-color-bg rounded-[1.5rem] lg:rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col gap-4 lg:gap-5 relative transition-all duration-700 hover:border-color-accent/40 shadow-soft border border-color-border",
                   plan.popular ? "border-color-accent/50 shadow-color-accent/5 lg:scale-[1.02] z-10 bg-color-bg-2" : ""

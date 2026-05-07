@@ -183,10 +183,10 @@ export function WorkshopsHub() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="flex flex-col gap-10">
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.08 }}
-              transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-5 text-left items-start"
             >
               <span className="type-h6 text-color-accent">
@@ -210,10 +210,10 @@ export function WorkshopsHub() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="flex flex-col gap-12">
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.08 }}
-              transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-4 text-left items-start"
             >
               <span className="type-h6 text-color-accent">
@@ -228,10 +228,10 @@ export function WorkshopsHub() {
               {tracks.map((track, index) => (
                 <motion.div
                   key={track.title}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.08 }}
-                  transition={{ duration: 0.8, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
+                  viewport={{ once: true, amount: 0.12 }}
+                  transition={{ duration: 0.4, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                   className="bg-color-bg p-8 rounded-3xl border border-color-border hover:border-color-accent/30 transition-all duration-700 group flex flex-col gap-6 shadow-soft relative overflow-hidden"
                 >
                   {/* Card Glow */}
@@ -277,10 +277,10 @@ export function WorkshopsHub() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="flex flex-col gap-12">
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.08 }}
-              transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-6 text-left items-start"
             >
               <span className="type-h6 text-color-accent">
@@ -305,10 +305,10 @@ export function WorkshopsHub() {
                     {principles.map((p, i) => (
                       <motion.tr 
                         key={i}
-                        initial={{ opacity: 0, x: -30 }}
+                        initial={{ opacity: 0, x: -8 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.08 }}
-                        transition={{ duration: 0.8, delay: i * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
+                        viewport={{ once: true, amount: 0.12 }}
+                        transition={{ duration: 0.4, delay: i * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
                         className="border-b border-color-border last:border-0 hover:bg-color-bg-2 transition-colors duration-500 group"
                       >
                         <td className="px-8 py-6 text-base font-semibold text-color-text group-hover:text-color-accent transition-colors duration-500">{p.principle}</td>
@@ -329,10 +329,10 @@ export function WorkshopsHub() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="flex flex-col gap-12">
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.08 }}
-              transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col gap-6 text-left items-start"
             >
               <span className="type-h6 text-color-accent">
@@ -349,8 +349,8 @@ export function WorkshopsHub() {
                   key={stat.label} 
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, amount: 0.08 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  viewport={{ once: true, amount: 0.12 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex flex-col items-center text-center gap-4 group"
                 >
                   {stat.icon && (
@@ -411,10 +411,10 @@ export function WorkshopsHub() {
               {bookingSteps.map((step, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
+                  initial={{ opacity: 0, x: i % 2 === 0 ? -8 : 8 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.08 }}
-                  transition={{ duration: 0.7, delay: i * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
+                  viewport={{ once: true, amount: 0.12 }}
+                  transition={{ duration: 0.4, delay: i * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
                   className="flex gap-8 relative"
                 >
                   {/* Connector line */}

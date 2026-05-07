@@ -98,10 +98,10 @@ export function EducatorsSection({ eyebrow = 'Our Educators', title = 'Trained b
             {educators.map((edu, index) => (
               <motion.div
                 key={edu.name}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
-                transition={{ duration: 0.5, delay: index * 0.08, ease: [0.215, 0.61, 0.355, 1] }}
+                viewport={{ once: true, amount: 0.12 }}
+                transition={{ duration: 0.4, delay: index * 0.08, ease: [0.215, 0.61, 0.355, 1] }}
                 className="group bg-color-bg-2 border border-color-border rounded-2xl overflow-hidden flex flex-col hover:border-color-accent/30 hover:shadow-xl hover:shadow-color-accent/5 transition-all duration-500"
               >
                 {/* Photo — full bleed top */}
