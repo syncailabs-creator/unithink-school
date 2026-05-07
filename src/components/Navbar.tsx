@@ -39,9 +39,10 @@ const scrolledPillStyle: React.CSSProperties = {
 };
 
 export function Navbar() {
-  const [isScrolled,     setIsScrolled]     = useState(false);
-  const [isMenuOpen,     setIsMenuOpen]     = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isScrolled,             setIsScrolled]             = useState(false);
+  const [isMenuOpen,             setIsMenuOpen]             = useState(false);
+  const [isDropdownOpen,         setIsDropdownOpen]         = useState(false);
+  const [isMobileWorkshopsOpen,  setIsMobileWorkshopsOpen]  = useState(false);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -53,11 +54,17 @@ export function Navbar() {
   useEffect(() => {
     setIsDropdownOpen(false);
     setIsMenuOpen(false);
+    setIsMobileWorkshopsOpen(false);
   }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
+  }, [isMenuOpen]);
+
+  // Reset accordion when drawer closes
+  useEffect(() => {
+    if (!isMenuOpen) setIsMobileWorkshopsOpen(false);
   }, [isMenuOpen]);
 
   const workshopActive =
@@ -241,15 +248,16 @@ export function Navbar() {
             <div className="hidden sm:block">
               <ThemeToggle />
             </div>
+            {/* CTA hidden on mobile — it lives inside the drawer instead */}
             <Link
               to="/contact"
-              className="btn-primary text-[10px] md:text-[11px] px-3 md:px-5 py-2 md:py-2.5 font-black tracking-wide uppercase"
+              className="hidden md:inline-flex btn-primary text-[10px] md:text-[11px] px-3 md:px-5 py-2 md:py-2.5 font-black tracking-wide uppercase"
               style={{ letterSpacing: '0.08em' }}
             >
               Book a Workshop
             </Link>
 
-            {/* Mobile toggle */}
+            {/* Mobile toggle — only on < lg */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="lg:hidden p-2 text-color-text hover:bg-color-bg-2 rounded-xl transition-colors"
@@ -316,46 +324,81 @@ export function Navbar() {
               </div>
 
               <div className="flex flex-col px-5 pt-6 pb-8 gap-6 flex-1">
-                <div className="flex flex-col gap-2">
-                  <p className="text-[10px] uppercase tracking-[0.25em] text-color-text-muted font-black px-2 mb-1">
-                    Workshops
-                  </p>
-                  {workshopLinks.map((link) => (
-                    <Link
-                      key={link.name}
-                      to={link.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      className={cn(
-                        'flex flex-col gap-0.5 px-4 py-3.5 rounded-2xl transition-all duration-200',
-                        pathname === link.href
-                          ? 'bg-color-accent/10 border border-color-accent/20'
-                          : 'hover:bg-color-bg-2'
-                      )}
-                    >
-                      <span className={cn(
-                        'text-base font-heading font-bold',
-                        pathname === link.href ? 'text-color-accent' : 'text-color-text'
-                      )}>
-                        {link.name}
-                      </span>
-                      <span className="text-xs text-color-text-muted">{link.description}</span>
-                    </Link>
-                  ))}
-                  <Link
-                    to="/ai-workshops"
-                    onClick={() => setIsMenuOpen(false)}
-                    className="px-4 py-2.5 text-sm font-bold text-color-accent hover:bg-color-accent/10 rounded-xl transition-colors"
+
+                {/* ── Workshops accordion ── */}
+                <div className="flex flex-col gap-1">
+                  <button
+                    onClick={() => setIsMobileWorkshopsOpen(prev => !prev)}
+                    className={cn(
+                      'flex items-center justify-between w-full px-4 py-3.5 rounded-2xl transition-all duration-200',
+                      workshopActive
+                        ? 'bg-color-accent/10 border border-color-accent/20'
+                        : 'hover:bg-color-bg-2'
+                    )}
                   >
-                    View All Workshops →
-                  </Link>
+                    <span className={cn(
+                      'text-base font-heading font-bold',
+                      workshopActive ? 'text-color-accent' : 'text-color-text'
+                    )}>
+                      Workshops
+                    </span>
+                    <ChevronDown
+                      className={cn(
+                        'w-4 h-4 text-color-text-muted transition-transform duration-200',
+                        isMobileWorkshopsOpen && 'rotate-180'
+                      )}
+                    />
+                  </button>
+
+                  <AnimatePresence initial={false}>
+                    {isMobileWorkshopsOpen && (
+                      <motion.div
+                        key="workshops-accordion"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
+                        className="overflow-hidden"
+                      >
+                        <div className="flex flex-col gap-1 pl-2 pt-1 pb-1">
+                          {workshopLinks.map((link) => (
+                            <Link
+                              key={link.name}
+                              to={link.href}
+                              onClick={() => setIsMenuOpen(false)}
+                              className={cn(
+                                'flex flex-col gap-0.5 px-4 py-3 rounded-2xl transition-all duration-200',
+                                pathname === link.href
+                                  ? 'bg-color-accent/10 border border-color-accent/20'
+                                  : 'hover:bg-color-bg-2'
+                              )}
+                            >
+                              <span className={cn(
+                                'text-sm font-heading font-bold',
+                                pathname === link.href ? 'text-color-accent' : 'text-color-text'
+                              )}>
+                                {link.name}
+                              </span>
+                              <span className="text-xs text-color-text-muted">{link.description}</span>
+                            </Link>
+                          ))}
+                          <Link
+                            to="/ai-workshops"
+                            onClick={() => setIsMenuOpen(false)}
+                            className="px-4 py-2.5 text-sm font-bold text-color-accent hover:bg-color-accent/10 rounded-xl transition-colors"
+                          >
+                            View All Workshops →
+                          </Link>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
                 <div className="h-px bg-color-border" />
 
+                {/* ── Other nav links ── */}
                 <div className="flex flex-col gap-1">
-                  <p className="text-[10px] uppercase tracking-[0.25em] text-color-text-muted font-black px-2 mb-1">
-                    Pages
-                  </p>
                   {navLinks.map((link) => (
                     <Link
                       key={link.name}
@@ -373,6 +416,7 @@ export function Navbar() {
                   ))}
                 </div>
 
+                {/* ── CTAs ── */}
                 <div className="mt-auto flex flex-col gap-3">
                   <Link
                     to="/contact"

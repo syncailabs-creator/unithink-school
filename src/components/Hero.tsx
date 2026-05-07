@@ -218,7 +218,7 @@ export function Hero({
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-            className="flex-1 min-w-0 flex flex-col items-center lg:items-start gap-8"
+            className="flex-1 min-w-0 flex flex-col items-center lg:items-start gap-8 order-2 lg:order-1"
           >
             <div className="flex flex-col gap-6 items-center lg:items-start w-full">
               {/* Eyebrow */}
@@ -294,7 +294,7 @@ export function Hero({
               initial={{ opacity: 0, scale: 0.95, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative w-full sm:max-w-[480px] sm:mx-auto lg:mx-0 lg:w-[480px] xl:w-[560px] shrink-0"
+              className="relative w-full sm:max-w-[480px] sm:mx-auto lg:mx-0 lg:w-[480px] xl:w-[560px] shrink-0 order-1 lg:order-2"
             >
               <div
                 className="rounded-[2.5rem] overflow-hidden border border-color-border relative"
@@ -377,7 +377,7 @@ export function Hero({
               initial={{ opacity: 0, scale: 0.93, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 lg:w-[580px] xl:w-[620px] lg:mr-3 shrink-0 pb-6 lg:pb-4"
+              className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 lg:w-[580px] xl:w-[620px] lg:mr-3 shrink-0 pb-6 lg:pb-4 order-1 lg:order-2"
             >
               {/* Main card */}
               {visualCard && (
