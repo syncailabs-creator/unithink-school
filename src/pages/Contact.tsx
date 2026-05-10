@@ -56,12 +56,25 @@ const faqs = [
 ];
 
 
+const INDIAN_PHONE_REGEX = /^[6-9]\d{9}$/;
+
 export function Contact() {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [whatsapp, setWhatsapp] = useState('');
+  const [whatsappError, setWhatsappError] = useState('');
+
+  const validateWhatsapp = (value: string) => {
+    const digits = value.replace(/\D/g, '').replace(/^91/, '');
+    if (!digits) return 'WhatsApp number is required';
+    if (!INDIAN_PHONE_REGEX.test(digits)) return 'Enter a valid 10-digit Indian mobile number';
+    return '';
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const error = validateWhatsapp(whatsapp);
+    if (error) { setWhatsappError(error); return; }
     setFormState('submitting');
     setTimeout(() => setFormState('success'), 1500);
   };
@@ -309,7 +322,21 @@ export function Contact() {
                         </div>
                         <div className="space-y-2">
                           <label className="text-[10px] font-medium uppercase tracking-[0.06em] text-color-text-muted">WhatsApp Number *</label>
-                          <input required type="tel" placeholder="+91 XXXXX XXXXX" className="w-full bg-color-bg-2 border border-color-border rounded-2xl px-4 py-3.5 text-color-text focus:outline-none focus:border-color-accent/50 transition-colors font-medium text-sm" />
+                          <input
+                            required
+                            type="tel"
+                            placeholder="+91 XXXXX XXXXX"
+                            value={whatsapp}
+                            onChange={e => { setWhatsapp(e.target.value); if (whatsappError) setWhatsappError(validateWhatsapp(e.target.value)); }}
+                            onBlur={() => setWhatsappError(validateWhatsapp(whatsapp))}
+                            className={cn(
+                              "w-full bg-color-bg-2 border rounded-2xl px-4 py-3.5 text-color-text focus:outline-none transition-colors font-medium text-sm",
+                              whatsappError ? "border-red-400 focus:border-red-400" : "border-color-border focus:border-color-accent/50"
+                            )}
+                          />
+                          {whatsappError && (
+                            <p className="text-[11px] text-red-400 font-medium mt-1">{whatsappError}</p>
+                          )}
                         </div>
                       </div>
 

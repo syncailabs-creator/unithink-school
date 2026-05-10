@@ -340,7 +340,7 @@ export function AIMentor() {
   const row2 = [...testimonials.slice().reverse(), ...testimonials.slice().reverse()];
 
   return (
-    <div className="pt-20 relative overflow-hidden">
+    <div className="relative overflow-hidden">
       <SEO
         title="AI Mentor India | Free Sunday Workshop"
         description="Your personal AI growth partner. Free Sunday AI workshops, ₹299 community access, or ₹999 personalised roadmap. Expert-led. For India's AI learners."
@@ -683,7 +683,7 @@ export function AIMentor() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { src: '/content/ws_video3.mp4', label: 'Live Sunday AI Session' },
-              { src: '/content/ws_video3.mp4', label: 'Community Q&A Highlight' },
+              { src: '/content/ws_video4.mp4', label: 'Community Q&A Highlight' },
               { src: '/content/fac2.mp4', label: 'AI Agent Build — n8n Demo' },
             ].map((v, i) => (
               <HoverVideoCard key={i} src={v.src} label={v.label} index={i} />

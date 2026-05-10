@@ -367,19 +367,11 @@ export function WorkshopsHub() {
               ))}
             </div>
 
-            <div className="pt-10 border-t border-color-border">
-              <div className="flex flex-col gap-12 items-center">
-                <span className="type-h6 text-color-text-muted">Institutions Served</span>
-                <div className="flex flex-wrap justify-center gap-x-16 gap-y-10 opacity-30 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-1000">
-                  {['Parul University', 'Vishwakarma University', 'Techno NJR', 'Saffrony University', 'GTU', 'Metizsoft', 'AIT Ahmedabad', 'Geetanjali Institute', 'GITS Jaipur'].map(inst => (
-                    <span key={inst} className="text-sm font-medium text-color-text-2 hover:text-color-accent transition-colors cursor-default">{inst}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
+      <TrustBar />
 
       <section className="section bg-color-bg-2 relative overflow-hidden px-3 md:px-5">
         <DotGrid />

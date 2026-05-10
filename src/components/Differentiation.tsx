@@ -69,8 +69,8 @@ export function Differentiation() {
             </p>
           </motion.div>
 
-          {/* Table */}
-          <div className="bg-color-bg rounded-2xl overflow-hidden border border-color-border shadow-soft">
+          {/* Desktop Table */}
+          <div className="hidden md:block bg-color-bg rounded-2xl overflow-hidden border border-color-border shadow-soft">
             <div className="overflow-x-auto no-scrollbar">
               <table className="w-full text-left border-collapse min-w-[640px]">
                 <thead>
@@ -118,6 +118,65 @@ export function Differentiation() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          {/* Mobile: Stacked Cards */}
+          <div className="flex flex-col gap-4 md:hidden">
+            {/* Unithink School card (top) */}
+            <div className="bg-color-accent-bg rounded-2xl overflow-hidden border border-color-accent/30 shadow-soft">
+              <div className="px-4 py-3 bg-color-accent flex items-center gap-2">
+                <Check className="w-4 h-4 text-color-bg" />
+                <span className="text-xs font-semibold uppercase tracking-[0.06em] text-color-bg">Unithink School</span>
+              </div>
+              <div className="divide-y divide-color-accent/15">
+                {comparison.map((row, index) => (
+                  <motion.div
+                    key={`u-${row.feature}`}
+                    initial={{ opacity: 0, y: 6 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.12 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="px-4 py-3 flex flex-col gap-1"
+                  >
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.06em] text-color-accent">{row.feature}</span>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-md bg-color-accent/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <Check className="w-2.5 h-2.5 text-color-accent" />
+                      </div>
+                      <span className="text-sm text-color-text font-normal leading-snug">{row.unithink}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Online Courses card (bottom) */}
+            <div className="bg-color-bg rounded-2xl overflow-hidden border border-color-border shadow-soft">
+              <div className="px-4 py-3 bg-color-bg-2 flex items-center gap-2 border-b border-color-border">
+                <X className="w-4 h-4 text-red-400" />
+                <span className="text-xs font-semibold uppercase tracking-[0.06em] text-color-text-muted">Online Courses</span>
+              </div>
+              <div className="divide-y divide-color-border">
+                {comparison.map((row, index) => (
+                  <motion.div
+                    key={`o-${row.feature}`}
+                    initial={{ opacity: 0, y: 6 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.12 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="px-4 py-3 flex flex-col gap-1"
+                  >
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.06em] text-color-text-muted">{row.feature}</span>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-md bg-red-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <X className="w-2.5 h-2.5 text-red-400" />
+                      </div>
+                      <span className="text-sm text-color-text-2 font-normal leading-snug">{row.online}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -57,7 +57,7 @@ export function FormatSection({ eyebrow, title, description, note, formats, broc
           {/* Tabbed Layout */}
           <div className="grid lg:grid-cols-12 gap-6 items-start">
             {/* Left: Tab selectors */}
-            <div className="lg:col-span-4 flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-visible -mx-6 px-6 lg:mx-0 lg:px-0 pb-1 lg:pb-0">
+            <div className="lg:col-span-4 flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-visible -mx-3 px-3 md:-mx-5 md:px-5 lg:mx-0 lg:px-0 pb-2 lg:pb-0 sticky top-[76px] lg:static z-20 bg-color-bg-2 lg:bg-transparent py-2 lg:py-0 -mt-2 lg:mt-0">
               {formats.map((format, index) => (
                 <button
                   key={format.title}

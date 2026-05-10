@@ -334,3 +334,13 @@
   .tracking-\[0\.15em\]  { letter-spacing: 0.05em; }
 }
 
+/* ── Prevent GPU-layer blinking on animated elements ─────────────── */
+[data-motion], .motion-safe\:* {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+/* Apply to commonly blinking framer-motion divs */
+.group, [class*="rounded-2xl"], [class*="rounded-3xl"] {
+  transform: translateZ(0);
+}
+

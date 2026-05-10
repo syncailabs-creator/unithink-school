@@ -1,5 +1,6 @@
 ﻿import { DotGrid } from './DotGrid';
 import { motion } from 'motion/react';
+import { useState } from 'react';
 
 interface Tool {
   name: string;
@@ -53,6 +54,44 @@ const audienceContent = {
   },
 };
 
+function ToolCard({ tool, index }: { tool: Tool; index: number }) {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 6 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.4, delay: index * 0.04, ease: [0.215, 0.61, 0.355, 1] }}
+      whileHover={{ y: -5, transition: { duration: 0.2 } }}
+      className="group bg-color-bg border border-color-border rounded-2xl p-3 md:p-4 flex flex-col items-center gap-2.5 hover:border-color-accent/30 hover:shadow-lg hover:shadow-color-accent/5 transition-all duration-300 cursor-default"
+    >
+      <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center bg-color-bg-2 flex-shrink-0 relative">
+        {!loaded && (
+          <div className="absolute inset-0 bg-color-border animate-pulse rounded-xl" />
+        )}
+        <img
+          src={tool.icon}
+          alt={tool.name}
+          loading="eager"
+          width={40}
+          height={40}
+          onLoad={() => setLoaded(true)}
+          className="w-full h-full object-contain"
+          style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.2s' }}
+        />
+      </div>
+      <div className="flex flex-col items-center gap-0.5 text-center">
+        <span className="text-[10px] md:text-[11px] font-medium text-color-text group-hover:text-color-accent transition-colors duration-300 leading-tight">
+          {tool.name}
+        </span>
+        <span className="hidden md:block text-[9px] font-normal text-color-text-muted">
+          {tool.category}
+        </span>
+      </div>
+    </motion.div>
+  );
+}
+
 export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
   const content = audienceContent[audience];
 
@@ -86,34 +125,7 @@ export function ToolsSection({ audience = 'general' }: ToolsSectionProps) {
           {/* Tools Grid */}
           <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3 md:gap-4">
             {tools.map((tool, index) => (
-              <motion.div
-                key={tool.name}
-                initial={{ opacity: 0, y: 6 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, amount: 0.12 }}
-                transition={{ duration: 0.4, delay: index * 0.04, ease: [0.215, 0.61, 0.355, 1] }}
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="group bg-color-bg border border-color-border rounded-2xl p-3 md:p-4 flex flex-col items-center gap-2.5 hover:border-color-accent/30 hover:shadow-lg hover:shadow-color-accent/5 transition-all duration-300 cursor-default"
-              >
-                <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center bg-color-bg-2 flex-shrink-0">
-                  <img
-                    src={tool.icon}
-                    alt={tool.name}
-                    loading="lazy"
-                    width={40}
-                    height={40}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <div className="flex flex-col items-center gap-0.5 text-center">
-                  <span className="text-[10px] md:text-[11px] font-medium text-color-text group-hover:text-color-accent transition-colors duration-300 leading-tight">
-                    {tool.name}
-                  </span>
-                  <span className="hidden md:block text-[9px] font-normal text-color-text-muted">
-                    {tool.category}
-                  </span>
-                </div>
-              </motion.div>
+              <ToolCard key={tool.name} tool={tool} index={index} />
             ))}
           </div>
 

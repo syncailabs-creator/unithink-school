@@ -228,7 +228,7 @@ export function Navbar() {
               <Link
                 key={link.name}
                 to={link.href}
-                onClick={() => { if (pathname === link.href) { window.scrollTo(0, 0); window.location.reload(); } }}
+                onClick={() => { if (pathname === link.href) { window.scrollTo({ top: 0, behavior: 'instant' }); } }}
                 className={cn(
                   'relative px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200',
                   pathname === link.href
@@ -404,7 +404,7 @@ export function Navbar() {
                     <Link
                       key={link.name}
                       to={link.href}
-                      onClick={() => { setIsMenuOpen(false); if (pathname === link.href) { window.scrollTo(0, 0); window.location.reload(); } }}
+                      onClick={() => { setIsMenuOpen(false); if (pathname === link.href) { window.scrollTo({ top: 0, behavior: 'instant' }); } }}
                       className={cn(
                         'px-4 py-2.5 text-sm font-semibold rounded-2xl transition-all duration-200',
                         pathname === link.href

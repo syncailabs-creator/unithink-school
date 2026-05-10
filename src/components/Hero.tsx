@@ -65,10 +65,10 @@ export function Hero({
   const displayMetrics = metrics ?? infographicMetrics;
   const displayActivity = activityItems ?? activityFeed;
   return (
-    <section className="relative min-h-[100svh] md:min-h-screen pt-[88px] sm:pt-[96px] md:pt-[112px] pb-12 md:pb-20 overflow-hidden flex items-center bg-color-bg px-3 md:px-5">
+    <section className="relative md:min-h-screen pt-[88px] sm:pt-[96px] md:pt-[112px] pb-16 md:pb-24 overflow-hidden flex items-center bg-color-bg px-3 md:px-5">
 
       {/* ── Aurora gradient background ─────────────────────────────── */}
-      <div aria-hidden="true" className="absolute inset-0 pointer-events-none overflow-hidden">
+      <div aria-hidden="true" className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <div
           className="absolute -top-[30%] -left-[15%] w-[70vw] h-[70vw] max-w-[900px] max-h-[900px] rounded-full animate-aurora"
           style={{ background: 'radial-gradient(circle, rgba(251,176,59,0.20) 0%, rgba(251,176,59,0.07) 50%, transparent 70%)' }}
@@ -211,7 +211,7 @@ export function Hero({
       </div>
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="w-full flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-12">
+        <div className="w-full flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
 
           {/* ── Left: Content ─────────────────────────────────────────── */}
           <motion.div
@@ -294,7 +294,7 @@ export function Hero({
               initial={{ opacity: 0, scale: 0.95, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative w-full sm:max-w-[480px] sm:mx-auto lg:mx-0 lg:w-[480px] xl:w-[560px] shrink-0"
+              className="relative w-full sm:max-w-[480px] sm:mx-auto lg:mx-0 lg:w-[480px] xl:w-[560px] shrink-0 hidden sm:block"
             >
               <div
                 className="rounded-[2.5rem] overflow-hidden border border-color-border relative"
@@ -377,7 +377,7 @@ export function Hero({
               initial={{ opacity: 0, scale: 0.93, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 lg:w-[580px] xl:w-[620px] lg:mr-3 shrink-0 pb-6 lg:pb-4"
+              className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 lg:w-[580px] xl:w-[620px] lg:mr-3 shrink-0 pb-6 lg:pb-4 hidden sm:block"
             >
               {/* Main card */}
               {visualCard && (

@@ -137,14 +137,16 @@ function VideoCard({ video, index, aspectRatio = '9/16', size = 'portrait', onUn
             playsInline
             preload="metadata"
             aria-label={video.label}
-            onLoadedMetadata={() => setReady(true)}
+            onLoadedData={() => setReady(true)}
             onError={() => setError(true)}
           />
         )}
 
-        {/* Loading shimmer — only while video is loading and no error */}
+        {/* Loading spinner — shown until video is ready */}
         {!ready && !error && (
-          <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-white/10 to-white/5 animate-pulse" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+            <div className="w-10 h-10 rounded-full border-2 border-color-accent border-t-transparent animate-spin" />
+          </div>
         )}
 
         {/* Gradient overlay on hover */}

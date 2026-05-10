@@ -46,8 +46,8 @@ export function TrustBar({
           <div className="w-12 h-[1px] bg-color-accent" />
         </motion.div>
 
-        {/* Marquee track */}
-        <div className="relative overflow-hidden">
+        {/* Desktop Marquee */}
+        <div className="relative overflow-hidden hidden md:block">
           <div
             className="absolute left-0 top-0 bottom-0 w-36 z-10 pointer-events-none"
             style={{ background: 'linear-gradient(to right, var(--color-bg-2) 20%, transparent)' }}
@@ -56,7 +56,6 @@ export function TrustBar({
             className="absolute right-0 top-0 bottom-0 w-36 z-10 pointer-events-none"
             style={{ background: 'linear-gradient(to left, var(--color-bg-2) 20%, transparent)' }}
           />
-
           <div
             className="flex items-center animate-marquee"
             style={{ width: 'max-content', animationDuration: '44s' }}
@@ -66,8 +65,36 @@ export function TrustBar({
             ))}
           </div>
         </div>
+
+        {/* Mobile: 2-row grid */}
+        <div className="md:hidden px-4">
+          <div className="grid grid-cols-3 gap-4">
+            {logos.map((logo) => (
+              <MobileLogoItem key={logo.name} logo={logo} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
+  );
+}
+
+function MobileLogoItem({ logo }: { logo: { name: string; src: string; subtitle: string } }) {
+  return (
+    <div className="flex flex-col items-center gap-2 p-3 rounded-xl border border-color-border bg-color-bg">
+      <div className="w-14 h-10 flex items-center justify-center">
+        <img
+          src={logo.src}
+          alt={logo.name}
+          width={56}
+          height={40}
+          className="w-full h-full object-contain opacity-80"
+          loading="lazy"
+          draggable={false}
+        />
+      </div>
+      <span className="text-[9px] font-medium text-color-text-muted text-center leading-tight">{logo.name}</span>
+    </div>
   );
 }
 
