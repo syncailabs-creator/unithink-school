@@ -339,8 +339,16 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-/* Apply to commonly blinking framer-motion divs */
-.group, [class*="rounded-2xl"], [class*="rounded-3xl"] {
+/* Apply to all card/container variants — covers rounded-xl, rounded-2xl,
+   rounded-3xl, rounded-lg, and arbitrary rounded-[x] values used sitewide */
+.group,
+[class*="rounded-lg"],
+[class*="rounded-xl"],
+[class*="rounded-2xl"],
+[class*="rounded-3xl"],
+[class*="rounded-["] {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: translateZ(0);
 }
 
