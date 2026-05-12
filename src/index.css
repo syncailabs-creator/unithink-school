@@ -339,6 +339,12 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+/* Images: force GPU layer so opacity animations don't cause a paint flash */
+img {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
 /* Apply to all card/container variants — covers rounded-xl, rounded-2xl,
    rounded-3xl, rounded-lg, and arbitrary rounded-[x] values used sitewide */
 .group,

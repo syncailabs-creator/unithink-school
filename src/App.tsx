@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { MotionConfig, motion, AnimatePresence } from 'motion/react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
@@ -42,6 +42,7 @@ function PageLoader() {
 export default function App() {
   const location = useLocation();
   return (
+    <MotionConfig viewport={{ margin: "0px 0px -60px 0px" }}>
     <div className="min-h-screen selection:bg-color-accent selection:text-color-bg">
       <ScrollToTop />
       <Navbar />
@@ -78,5 +79,6 @@ export default function App() {
       <Footer />
       <WhatsAppFloat />
     </div>
+    </MotionConfig>
   );
 }
