@@ -71,7 +71,7 @@ export function Pricing() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -92,7 +92,7 @@ export function Pricing() {
                 key={plan.title}
                 initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.12 }}
+                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.4, delay: index * 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                 className={cn(
                   "bg-color-bg rounded-[1.5rem] lg:rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col gap-4 lg:gap-5 relative transition-all duration-700 hover:border-color-accent/40 shadow-soft border border-color-border",

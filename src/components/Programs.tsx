@@ -86,7 +86,7 @@ export function Programs() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-4 max-w-[800px]"
           >
@@ -111,7 +111,7 @@ export function Programs() {
                 key={program.title}
                 initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.12 }}
+                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.4, delay: index * 0.12, ease: [0.215, 0.61, 0.355, 1] }}
                 className="bg-color-bg rounded-2xl p-5 sm:p-6 md:p-7 flex flex-col gap-4 md:gap-5 group transition-all duration-700 relative overflow-hidden border border-color-border shadow-soft hover:border-color-accent/50 hover:shadow-[0_0_0_1px_rgba(251,176,59,0.2),0_16px_48px_rgba(251,176,59,0.1)]"
               >

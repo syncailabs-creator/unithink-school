@@ -185,7 +185,7 @@ export function Contact() {
               <motion.div
                 initial={{ opacity: 0, x: -24 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
                 className="rounded-[2.5rem] border border-color-border overflow-hidden shadow-soft"
                 style={{ background: 'var(--color-bg)' }}
@@ -209,7 +209,7 @@ export function Contact() {
                         key={i}
                         initial={{ opacity: 0, x: -16 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.08 }}
+                        viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                         transition={{ duration: 0.5, delay: i * 0.1 }}
                         className="flex gap-5 group"
                       >
@@ -248,7 +248,7 @@ export function Contact() {
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
                 className="rounded-[2.5rem] border border-color-border sticky top-28 shadow-soft overflow-hidden"
                 style={{ background: 'var(--color-bg)' }}
@@ -419,7 +419,7 @@ export function Contact() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="mt-10 rounded-[2.5rem] border border-color-border overflow-hidden shadow-soft"
             style={{ background: 'var(--color-bg)' }}
@@ -472,7 +472,7 @@ export function Contact() {
                   rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.08 }}
+                  viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="flex items-center gap-4 p-4 rounded-2xl border border-transparent transition-all duration-300 group"
                   style={{ background: 'rgba(var(--color-bg-2-rgb, 248,248,250), 1)' }}
@@ -527,7 +527,7 @@ export function Contact() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
+            viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
@@ -546,7 +546,7 @@ export function Contact() {
                 key={i}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08 }}
+                viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                 transition={{ delay: i * 0.06, duration: 0.5 }}
                 className="rounded-[2rem] border border-color-border shadow-soft overflow-hidden transition-all duration-300 hover:border-color-accent/20"
                 style={{ background: 'var(--color-bg)' }}

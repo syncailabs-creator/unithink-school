@@ -10,6 +10,8 @@ coverage/
 # Large media files
 *.mov
 *.MOV
+*.mp4
+*.MP4
 *.avi
 *.mkv
 

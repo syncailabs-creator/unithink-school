@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+﻿import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { DotGrid } from './DotGrid';
@@ -156,7 +156,7 @@ export function WorkshopGallery({
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.12 }}
+          viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.35 }}
           className="text-left mb-12"
         >
@@ -176,7 +176,7 @@ export function WorkshopGallery({
               key={i}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.12 }}
+              viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
               transition={{ duration: 0.4, delay: (i % 6) * 0.07 }}
               className="group relative rounded-2xl overflow-hidden cursor-pointer border border-color-border hover:border-color-accent/40 transition-all duration-500 shadow-soft hover:shadow-xl hover:shadow-color-accent/10"
               style={{ aspectRatio: '4/3' }}
@@ -223,7 +223,7 @@ export function WorkshopGallery({
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.12 }}
+          viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 text-center text-sm text-color-text-muted font-medium"
         >

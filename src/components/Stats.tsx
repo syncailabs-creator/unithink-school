@@ -32,7 +32,7 @@ export function Stats({ items = defaultStats, heading, subheading, compact = fal
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.35 }}
             className="flex flex-col gap-4 text-left items-start mb-6 md:mb-8 lg:mb-10"
           >
@@ -54,7 +54,7 @@ export function Stats({ items = defaultStats, heading, subheading, compact = fal
               key={stat.label}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.12 }}
+              viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
               transition={{ duration: 0.4, delay: index * 0.1, ease: [0.215, 0.61, 0.355, 1] }}
               className="flex flex-col items-center text-center gap-4 group sm:border-r last:border-r-0 border-color-border px-4 sm:px-6"
             >

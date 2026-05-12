@@ -91,7 +91,7 @@ export function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -8 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-10"
           >
@@ -171,7 +171,7 @@ export function Contact() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.35, delay: 0.1 }}
             className="bg-color-bg rounded-[3rem] p-8 md:p-12 shadow-soft border border-color-border relative overflow-hidden"
           >

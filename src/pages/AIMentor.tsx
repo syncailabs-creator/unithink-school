@@ -227,7 +227,7 @@ function HoverVideoCard({ src, label, index }: HoverVideoCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.12 }}
+      viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
       transition={{ duration: 0.35, delay: index * 0.12 }}
       className="group relative rounded-[2rem] overflow-hidden border border-color-border bg-color-bg shadow-soft hover:border-color-accent/40 hover:shadow-xl hover:shadow-color-accent/8 transition-all duration-500 cursor-pointer"
       onMouseEnter={handleMouseEnter}
@@ -422,7 +422,7 @@ export function AIMentor() {
                   key={i}
                   initial={{ opacity: 0, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.12 }}
+                  viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="bg-color-bg p-7 rounded-[2.5rem] border border-color-border shadow-soft hover:border-color-accent/20 transition-all duration-500 group"
                 >
@@ -447,7 +447,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             className="flex flex-col gap-6 text-left items-start mb-8 md:mb-14 lg:mb-20"
           >
             <span className="type-h6 text-color-accent">Choose Your Starting Point</span>
@@ -466,7 +466,7 @@ export function AIMentor() {
                 key={plan.id}
                 initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.12 }}
+                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.4, delay: i * 0.15 }}
                 className={cn(
                   "relative flex flex-col p-10 rounded-[3rem] border transition-all duration-500",
@@ -535,7 +535,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
@@ -551,7 +551,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, delay: 0.1 }}
             className="rounded-[3rem] border border-color-border overflow-hidden shadow-soft bg-color-bg"
           >
@@ -588,7 +588,7 @@ export function AIMentor() {
                       key={i}
                       initial={{ opacity: 0, x: -12 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true, amount: 0.12 }}
+                      viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                       transition={{ duration: 0.5, delay: i * 0.05 }}
                       className="border-b border-color-border last:border-0 hover:bg-color-bg-2 group transition-all duration-300"
                     >
@@ -628,7 +628,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4 }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -666,7 +666,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4 }}
             className="flex flex-col gap-6 text-left items-start mb-6 md:mb-10 lg:mb-14"
           >
@@ -703,7 +703,7 @@ export function AIMentor() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
@@ -722,7 +722,7 @@ export function AIMentor() {
                 key={i}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.12 }}
+                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                 transition={{ delay: Math.min(i * 0.05, 0.3), duration: 0.5 }}
                 className="bg-color-bg-2 rounded-[2rem] border border-color-border shadow-soft overflow-hidden transition-all duration-300 hover:border-color-accent/20"
               >

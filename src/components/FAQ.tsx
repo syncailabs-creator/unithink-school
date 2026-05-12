@@ -71,7 +71,7 @@ export function FAQ({
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start"
           >
@@ -91,7 +91,7 @@ export function FAQ({
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.12 }}
+              viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
               transition={{ duration: 0.5, delay: 0.15 }}
               className="flex gap-3 overflow-x-auto no-scrollbar pb-1 px-1 sm:flex-wrap sm:overflow-x-visible sm:pb-0"
             >

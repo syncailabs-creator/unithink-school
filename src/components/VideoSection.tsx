@@ -1,4 +1,4 @@
-import { DotGrid } from './DotGrid';
+﻿import { DotGrid } from './DotGrid';
 import { motion } from 'motion/react';
 import { useRef, useState, useEffect } from 'react';
 import { Volume2, VolumeX, Maximize2 } from 'lucide-react';
@@ -108,7 +108,7 @@ function VideoCard({ video, index, aspectRatio = '9/16', size = 'portrait', onUn
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.12 }}
+      viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
       transition={{ duration: 0.4, delay: index * 0.07, ease: [0.215, 0.61, 0.355, 1] }}
       className="group bg-color-bg rounded-2xl border border-color-border overflow-hidden shadow-soft hover:border-color-accent/40 hover:shadow-xl hover:shadow-color-accent/8 transition-all duration-500 flex flex-col"
     >
@@ -237,7 +237,7 @@ export function VideoSection({ compact = false }: VideoSectionProps) {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12 }}
+            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.35, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-4 max-w-[640px]"
           >
