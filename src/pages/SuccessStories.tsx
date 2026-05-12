@@ -125,9 +125,6 @@ function FeedbackVideoCard({ src, label, tag, index }: { src: string; label: str
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 8 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
       transition={{ duration: 0.4, delay: index * 0.08 }}
       className="group rounded-2xl overflow-hidden border border-color-border bg-color-bg shadow-soft hover:border-color-accent/40 transition-all duration-500 flex flex-col"
     >
@@ -213,7 +210,6 @@ export function SuccessStories() {
             {/* Left: copy */}
             <div className="flex flex-col gap-10">
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 className="inline-flex items-center gap-3 w-fit px-5 py-2 rounded-full bg-color-accent/10 border border-color-accent/20 text-color-accent text-[10px] font-medium uppercase tracking-[0.06em] shadow-xl shadow-color-accent/5"
@@ -224,7 +220,6 @@ export function SuccessStories() {
 
               <div className="flex flex-col gap-6">
                 <motion.h1
-                  initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
                   className="type-h1 text-color-text"
@@ -234,7 +229,6 @@ export function SuccessStories() {
                 </motion.h1>
 
                 <motion.p
-                  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                   className="type-p1 text-color-text-2 max-w-[520px]"
@@ -244,7 +238,6 @@ export function SuccessStories() {
               </div>
 
               <motion.div
-                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
                 className="grid grid-cols-3 gap-6 pt-8"
@@ -268,7 +261,6 @@ export function SuccessStories() {
 
             {/* Right: Workshop photo with overlay */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.94, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
               className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 pt-8 lg:pt-6 pb-8 lg:pb-6"
@@ -359,9 +351,6 @@ export function SuccessStories() {
             {impactStats.map((stat, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.4, delay: i * 0.15 }}
                 className="bg-color-bg p-6 lg:p-8 rounded-2xl lg:rounded-[2.5rem] border border-color-border text-center group hover:border-color-accent/30 transition-all duration-700 shadow-soft"
               >
@@ -458,9 +447,6 @@ export function SuccessStories() {
               return (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 8 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                   transition={{ duration: 0.35, delay: (i % 3) * 0.1 }}
                   className="bg-color-bg rounded-[2.5rem] p-8 border border-color-border shadow-soft flex flex-col gap-6 group hover:border-color-accent/25 transition-all duration-500"
                 >
@@ -517,9 +503,6 @@ export function SuccessStories() {
                   {deliveryRecord.map((row, i) => (
                     <motion.tr
                       key={i}
-                      initial={{ opacity: 0, x: -8 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                       transition={{ duration: 0.4, delay: i * 0.06 }}
                       className="border-b border-color-border hover:bg-color-bg-2 transition-colors duration-300 group"
                     >
@@ -542,8 +525,6 @@ export function SuccessStories() {
                             <div className="h-1.5 rounded-full overflow-hidden" style={{ background: 'rgba(251,176,59,0.12)' }}>
                               <motion.div
                                 initial={{ width: 0 }}
-                                whileInView={{ width: `${(row.count / 450) * 100}%` }}
-                                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                                 transition={{ duration: 0.4, delay: i * 0.06, ease: [0.4, 0, 0.2, 1] }}
                                 className="h-full rounded-full"
                                 style={{ background: 'linear-gradient(90deg, #FBB03B, rgba(251,176,59,0.5))' }}
@@ -581,9 +562,6 @@ export function SuccessStories() {
               {allExperiences.map((exp, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 8 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                   transition={{ duration: 0.4, delay: (i % 4) * 0.1 }}
                   className="bg-color-bg p-8 rounded-[2.5rem] border border-color-border shadow-soft flex gap-6 group hover:border-color-accent/20 transition-all duration-500"
                 >
@@ -613,9 +591,6 @@ export function SuccessStories() {
             {caseStudies.map((cs, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
                 className="grid lg:grid-cols-12 gap-12 items-start"
               >
@@ -645,9 +620,6 @@ export function SuccessStories() {
                     {cs.metrics.map((m, j) => (
                       <motion.div
                         key={j}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                         transition={{ duration: 0.4, delay: j * 0.1 }}
                         className="bg-color-bg p-5 rounded-[2rem] border border-color-border text-center group hover:border-color-accent/30 transition-all duration-500"
                       >
@@ -697,9 +669,6 @@ export function SuccessStories() {
         <DotGrid />
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
             className="bg-color-bg p-8 md:p-14 rounded-2xl lg:rounded-[3rem] border border-color-border text-center shadow-soft relative overflow-hidden"
           >

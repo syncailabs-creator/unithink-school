@@ -107,7 +107,6 @@ export function Contact() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="max-w-5xl">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-color-accent/10 border border-color-accent/20 text-color-accent text-xs font-medium uppercase tracking-[0.06em] mb-8"
             >
@@ -115,7 +114,6 @@ export function Contact() {
               Get in Touch
             </motion.div>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
               className="type-h1 text-color-text mb-6"
@@ -126,7 +124,6 @@ export function Contact() {
               </span>
             </motion.h1>
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
               className="type-p1 text-color-text-2 mb-10 max-w-3xl"
@@ -136,7 +133,6 @@ export function Contact() {
 
             {/* Quick stats row */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
               className="flex flex-wrap gap-4"
@@ -144,7 +140,6 @@ export function Contact() {
               {socialProof.map((item, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.4 + i * 0.08 }}
                   className="flex items-center gap-3 px-5 py-3 rounded-2xl border shadow-soft transition-all duration-300 hover:border-color-accent/30 hover:scale-[1.02]"
@@ -183,9 +178,6 @@ export function Contact() {
 
               {/* What happens after */}
               <motion.div
-                initial={{ opacity: 0, x: -24 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
                 className="rounded-[2.5rem] border border-color-border overflow-hidden shadow-soft"
                 style={{ background: 'var(--color-bg)' }}
@@ -207,9 +199,6 @@ export function Contact() {
                     {steps.map((step, i) => (
                       <motion.div
                         key={i}
-                        initial={{ opacity: 0, x: -16 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                         transition={{ duration: 0.5, delay: i * 0.1 }}
                         className="flex gap-5 group"
                       >
@@ -246,9 +235,6 @@ export function Contact() {
             {/* Right: Form */}
             <div className="lg:col-span-7">
               <motion.div
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
                 className="rounded-[2.5rem] border border-color-border sticky top-28 shadow-soft overflow-hidden"
                 style={{ background: 'var(--color-bg)' }}
@@ -261,7 +247,6 @@ export function Contact() {
 
                 {formState === 'success' ? (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-center py-20 px-10"
                   >
@@ -417,9 +402,6 @@ export function Contact() {
 
           {/* Direct Line — full width below both columns */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="mt-10 rounded-[2.5rem] border border-color-border overflow-hidden shadow-soft"
             style={{ background: 'var(--color-bg)' }}
@@ -470,9 +452,6 @@ export function Contact() {
                   href={item.href}
                   target={item.href.startsWith('http') ? '_blank' : undefined}
                   rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="flex items-center gap-4 p-4 rounded-2xl border border-transparent transition-all duration-300 group"
                   style={{ background: 'rgba(var(--color-bg-2-rgb, 248,248,250), 1)' }}
@@ -525,9 +504,6 @@ export function Contact() {
         <div className="max-w-7xl mx-auto w-full relative">
           {/* Section header */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
             className="flex flex-col gap-6 text-left items-start mb-14"
           >
@@ -544,9 +520,6 @@ export function Contact() {
             {faqs.map((faq, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.08, margin: "0px 0px -80px 0px" }}
                 transition={{ delay: i * 0.06, duration: 0.5 }}
                 className="rounded-[2rem] border border-color-border shadow-soft overflow-hidden transition-all duration-300 hover:border-color-accent/20"
                 style={{ background: 'var(--color-bg)' }}

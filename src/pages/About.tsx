@@ -255,7 +255,6 @@ export function About() {
             {/* Left: copy */}
             <div className="flex flex-col gap-10">
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 className="inline-flex items-center gap-3 w-fit px-5 py-2 rounded-full bg-color-accent/10 border border-color-accent/20 text-color-accent text-[10px] font-medium uppercase tracking-[0.06em]"
@@ -266,7 +265,6 @@ export function About() {
 
               <div className="flex flex-col gap-6">
                 <motion.h1
-                  initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
                   className="type-h1 text-color-text"
@@ -276,7 +274,6 @@ export function About() {
                 </motion.h1>
 
                 <motion.p
-                  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.15, ease: [0.215, 0.61, 0.355, 1] }}
                   className="type-p1 text-color-text-2 max-w-[540px]"
@@ -286,7 +283,6 @@ export function About() {
               </div>
 
               <motion.div
-                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
                 className="flex flex-wrap gap-4"
@@ -302,7 +298,6 @@ export function About() {
 
               {/* Trust strip */}
               <motion.div
-                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.45 }}
                 className="pt-8 border-t border-color-border"
@@ -325,7 +320,6 @@ export function About() {
 
             {/* Right: story card */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.94, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
               className="relative w-full sm:max-w-[560px] sm:mx-auto lg:mx-0 pt-8 lg:pt-6 pb-8 lg:pb-6"
@@ -408,9 +402,6 @@ export function About() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4 }}
             className="text-left mb-8 md:mb-14 lg:mb-20"
           >
@@ -428,9 +419,6 @@ export function About() {
             {coreValues.map((val, i) => (
               <motion.div
                 key={val.title}
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                 transition={{ duration: 0.35, delay: i * 0.1 }}
                 className="bg-color-bg rounded-[2.5rem] p-8 md:p-10 border border-color-border shadow-soft group hover:border-color-accent/30 transition-all duration-500 flex gap-6"
               >
@@ -465,9 +453,6 @@ export function About() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4 }}
             className="max-w-[700px] mb-8 md:mb-14 lg:mb-20"
           >
@@ -491,9 +476,6 @@ export function About() {
                 return (
                   <motion.div
                     key={m.title}
-                    initial={{ opacity: 0, x: isRight ? -8 : 8 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                     transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
                     className={cn(
                       'relative flex items-start gap-6 md:gap-0',
@@ -561,9 +543,6 @@ export function About() {
 
             {/* Header */}
             <motion.div
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
               transition={{ duration: 0.4 }}
               className="flex flex-col gap-6 text-left items-start"
             >
@@ -581,9 +560,6 @@ export function About() {
               {expertSelectionSteps.map((step, i) => (
                 <motion.div
                   key={step.step}
-                  initial={{ opacity: 0, y: 8 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
                   transition={{ duration: 0.4, delay: i * 0.08, ease: [0.215, 0.61, 0.355, 1] }}
                   className="bg-color-bg rounded-[2rem] p-7 border border-color-border shadow-soft group hover:border-color-accent/30 hover:shadow-xl hover:shadow-color-accent/5 transition-all duration-500 flex flex-col gap-5"
                 >
@@ -617,9 +593,6 @@ export function About() {
 
             {/* Bottom callout */}
             <motion.div
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
               transition={{ duration: 0.35 }}
               className="rounded-[2.5rem] p-8 md:p-12 border border-color-accent/20 flex flex-col md:flex-row items-center justify-between gap-8"
               style={{ background: 'linear-gradient(135deg, rgba(251,176,59,0.06) 0%, transparent 60%)' }}
@@ -666,9 +639,6 @@ export function About() {
 
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.12, margin: "0px 0px -80px 0px" }}
             transition={{ duration: 0.4 }}
             className="flex flex-col gap-8 items-start"
           >
