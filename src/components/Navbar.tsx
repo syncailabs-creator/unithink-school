@@ -98,9 +98,7 @@ export function Navbar() {
 
           {/* ── Logo ── */}
           <a href="/" className="flex items-center gap-2.5 group flex-shrink-0 relative z-10">
-            <div className="w-8 h-8 rounded-xl bg-color-accent flex items-center justify-center shadow-sm group-hover:shadow-color-accent/30 group-hover:scale-105 transition-all duration-300">
-              <Sparkles className="w-4 h-4 text-color-bg" />
-            </div>
+            <img src="/logo.png" alt="UniThink School" className="w-8 h-8 rounded-xl object-cover group-hover:scale-105 transition-all duration-300" />
             <span className="font-heading font-black text-lg md:text-xl tracking-tight text-color-text group-hover:text-color-accent transition-colors duration-300">
               Unithink <span className="text-color-accent">School</span>
             </span>

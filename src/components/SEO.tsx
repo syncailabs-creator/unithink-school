@@ -81,7 +81,7 @@ export const organizationSchema = {
   "url": SITE_URL,
   "logo": {
     "@type": "ImageObject",
-    "url": `${SITE_URL}/favicon.svg`,
+    "url": `${SITE_URL}/logo.png`,
     "width": 60,
     "height": 60
   },
@@ -118,7 +118,7 @@ export const localBusinessSchema = {
   "@id": `${SITE_URL}/#local-business`,
   "name": "Unithink School — AI Training & Workshops",
   "url": SITE_URL,
-  "logo": `${SITE_URL}/favicon.svg`,
+  "logo": `${SITE_URL}/logo.png`,
   "image": `${SITE_URL}/og-image.jpg`,
   "description": "Ahmedabad-based AI training institute offering hands-on workshops for corporates, engineering students, and faculty. The Parivartan Method. AICTE-aligned. 1,800+ trained.",
   "address": {
