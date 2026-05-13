@@ -98,7 +98,7 @@ export function Navbar() {
 
           {/* ── Logo ── */}
           <a href="/" className="flex items-center gap-2.5 group flex-shrink-0 relative z-10">
-            <img src="/logo.png" alt="UniThink School" className="w-8 h-8 rounded-xl object-cover group-hover:scale-105 transition-all duration-300" />
+            <img src="/logo.png" alt="UniThink School" className="w-10 h-10 rounded-xl object-cover group-hover:scale-105 transition-all duration-300" />
             <span className="font-heading font-semibold text-xl md:text-2xl tracking-tight text-color-text group-hover:text-color-accent transition-colors duration-300">
               Unithink <span className="text-color-accent">School</span>
             </span>
